@@ -9,6 +9,8 @@ package testejava;
  *
  * @author Rafael Assis
  */
+import javax.swing.JOptionPane;
+
 public class Frm_Tela_Inicial extends javax.swing.JFrame {
     /**
      * Creates new form Frm_Tela_Inicial
@@ -17,6 +19,7 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
         initComponents();
         Option_Mat.setSelected(true);
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -32,7 +35,7 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
         Painel_Tela_Inicial = new javax.swing.JPanel();
         Option_Mat = new javax.swing.JRadioButton();
         Option_Financ = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
+        Option_Espec = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
@@ -67,10 +70,10 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
         Option_Financ.setText("Cálculos fianceiros");
         Option_Financ.setToolTipText("");
 
-        Selection.add(jRadioButton3);
-        jRadioButton3.setFont(new java.awt.Font("Yu Gothic UI Semilight", 2, 11)); // NOI18N
-        jRadioButton3.setText("Cálculos Especiais");
-        jRadioButton3.setToolTipText("");
+        Selection.add(Option_Espec);
+        Option_Espec.setFont(new java.awt.Font("Yu Gothic UI Semilight", 2, 11)); // NOI18N
+        Option_Espec.setText("Cálculos Especiais");
+        Option_Espec.setToolTipText("");
 
         jButton1.setText("Avançar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -95,7 +98,7 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
                 .addGroup(Painel_Tela_InicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Painel_Tela_InicialLayout.createSequentialGroup()
                         .addGroup(Painel_Tela_InicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButton3)
+                            .addComponent(Option_Espec)
                             .addComponent(Option_Financ)
                             .addComponent(Option_Mat))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -113,7 +116,7 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(Option_Financ)
                 .addGap(18, 18, 18)
-                .addComponent(jRadioButton3)
+                .addComponent(Option_Espec)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
                 .addGroup(Painel_Tela_InicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
@@ -146,7 +149,10 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
     }//GEN-LAST:event_Option_MatActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        System.exit(0);        // TODO add your handling code here:
+      int confirma = JOptionPane.showConfirmDialog(this,"Deseja sair do sistema?","Sair",JOptionPane.YES_NO_OPTION);
+      if(confirma == 0){
+          System.exit(0);
+      }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -155,6 +161,9 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
         }
         if(Option_Financ.isSelected()){
             new Frm_Calc_Financ().setVisible(true);
+        }
+        if (Option_Espec.isSelected()) {
+            new Frm_Calc_Espec().setVisible(true);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -194,6 +203,7 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton Option_Espec;
     private javax.swing.JRadioButton Option_Financ;
     private javax.swing.JRadioButton Option_Mat;
     private javax.swing.JPanel Painel_Tela_Inicial;
@@ -201,6 +211,5 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JRadioButton jRadioButton3;
     // End of variables declaration//GEN-END:variables
 }

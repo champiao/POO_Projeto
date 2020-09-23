@@ -25,22 +25,26 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="T_Painel" max="32767" attributes="0"/>
-                  <Component id="G_Painel" alignment="0" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="T_Painel" min="-2" max="-2" attributes="0"/>
+                  <Component id="G_Painel" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="Fat_Painel" max="32767" attributes="0"/>
-                  <Component id="Mult_Painel" max="32767" attributes="0"/>
-                  <Component id="Pot_Painel" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="Fat_Painel" max="32767" attributes="0"/>
+                          <Component id="Mult_Painel" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="Med_Painel" max="32767" attributes="0"/>
+                          <Component id="Espec_Painel" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="Pot_Painel" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="Med_Painel" max="32767" attributes="0"/>
-                  <Component id="Espec_Painel" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace pref="50" max="32767" attributes="0"/>
+              <EmptySpace pref="97" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -93,7 +97,7 @@
                           <Component id="N_Rotulo" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="T_Numero" min="-2" pref="67" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="6" max="32767" attributes="0"/>
                       </Group>
                       <Component id="T_Resultado" max="32767" attributes="0"/>
                   </Group>
@@ -178,31 +182,29 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="G_Cos" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="G_Cos_Res" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
                                   <Component id="G_Rotulo" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="G_Numero" min="-2" pref="55" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="G_Sen" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="G_Sen_Res" min="-2" pref="55" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="G_Numero" min="-2" pref="55" max="-2" attributes="0"/>
-                              <Component id="G_Sen_Res" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="13" max="32767" attributes="0"/>
+                          <EmptySpace pref="44" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="G_Calc" max="32767" attributes="0"/>
                               <Component id="G_Clear" max="32767" attributes="0"/>
                           </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="G_Cos" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="G_Cos_Res" min="-2" pref="56" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -249,11 +251,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Calcular:"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="G_CalcActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="G_Clear">
           <Properties>
             <Property name="text" type="java.lang.String" value="Limpar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="G_ClearActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="G_Sen">
           <Properties>
@@ -306,7 +314,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="Fat_Res_Rotulo" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="Fat_Res" min="-2" max="-2" attributes="0"/>
+                          <Component id="Fat_Res" min="-2" pref="118" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -353,11 +361,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Calcular:"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Fat_CalcActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Fat_Clear">
           <Properties>
             <Property name="text" type="java.lang.String" value="Limpar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Fat_ClearActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="Fat_Res_Rotulo">
           <Properties>
@@ -386,66 +400,68 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <Component id="Mult_Rotulo" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="Mult_Numero" min="-2" pref="68" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="Mult_Clear" max="32767" attributes="0"/>
+                              <Component id="Mult_Calc" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
                                   <Component id="Mult_Dobro_Rotulo" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="Mult_Dobro_Res" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Mult_Dobro_Res" min="-2" pref="53" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="Mult_Quadruplo_Rotulo" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
+                              <Group type="102" attributes="0">
                                   <Component id="Mult_Triplo_Rotulo" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Mult_Triplo_Res" min="-2" pref="55" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Mult_Triplo_Res" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Mult_Quintuplo_Rotulo" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="Mult_Quadruplo_Rotulo" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="Mult_Quadruplo_Res" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Mult_Quintuplo_Res" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="Mult_Quintuplo_Rotulo" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Mult_Quintuplo_Res" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="Mult_Quadruplo_Res" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="Mult_Clear" max="32767" attributes="0"/>
-                      <Component id="Mult_Calc" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="Mult_Rotulo" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Mult_Numero" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="Mult_Calc" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                  <Component id="Mult_Clear" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="Mult_Rotulo" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="Mult_Numero" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="Mult_Calc" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="Mult_Clear" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                          <Component id="Mult_Dobro_Rotulo" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Mult_Dobro_Res" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Mult_Quadruplo_Rotulo" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Mult_Quadruplo_Res" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="Mult_Quadruplo_Rotulo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Mult_Quadruplo_Res" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Mult_Dobro_Rotulo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Mult_Dobro_Res" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -454,7 +470,7 @@
                       <Component id="Mult_Quintuplo_Rotulo" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="Mult_Quintuplo_Res" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -545,7 +561,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
                                   <Component id="Pot_Rotulo" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="Pot_Numero" min="-2" pref="65" max="-2" attributes="0"/>
@@ -553,25 +569,26 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="Pot_Qadrado_Rotulo" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Pot_Quadrado_Res" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Pot_Quadrado_Res" min="-2" pref="81" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="Pot_6pot_Rotulo" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="Pot_6pot_Res" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   <Component id="Pot_5pot_Rotulo" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="Pot_5pot_Res" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Pot_5pot_Res" min="-2" pref="86" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
+                                  <Component id="Pot_6pot_Rotulo" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Pot_6pot_Res" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
                                   <Component id="Pot_7pot_Rotulo" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="Pot_7pot_Res" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Pot_7pot_Res" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
@@ -585,10 +602,10 @@
                               <Component id="Pot_4pot_Rotulo" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="Pot_Cubo_Rotulo" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="Pot_Cubo_Res" min="-2" max="-2" attributes="0"/>
-                              <Component id="Pot_4pot_Res" min="-2" max="-2" attributes="0"/>
+                              <Component id="Pot_Cubo_Res" min="-2" pref="78" max="-2" attributes="0"/>
+                              <Component id="Pot_4pot_Res" alignment="1" min="-2" pref="78" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
@@ -740,7 +757,7 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="Med_4valor" max="32767" attributes="0"/>
+                      <Component id="Med_4valor" pref="49" max="32767" attributes="0"/>
                       <Component id="Med_3valor" max="32767" attributes="0"/>
                       <Component id="Med_1valor" max="32767" attributes="0"/>
                       <Component id="Med_2valor" max="32767" attributes="0"/>
@@ -755,7 +772,7 @@
                   <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
                   <Component id="Med_Res_Rotulo" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="Med_Res" min="-2" max="-2" attributes="0"/>
+                  <Component id="Med_Res" min="-2" pref="88" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -874,8 +891,8 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="Clear_All" min="-2" pref="125" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="Close_Button" min="-2" pref="130" max="-2" attributes="0"/>
-                  <EmptySpace pref="31" max="32767" attributes="0"/>
+                  <Component id="Close_Button" pref="155" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

@@ -30,18 +30,6 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         Product_Label = new javax.swing.JLabel();
-        Regata_Check = new java.awt.Checkbox();
-        Social_Check = new java.awt.Checkbox();
-        Blusa_Check = new java.awt.Checkbox();
-        Pullover_Check = new java.awt.Checkbox();
-        Sapato_Check = new java.awt.Checkbox();
-        Calca_Check = new java.awt.Checkbox();
-        Meia_Check = new java.awt.Checkbox();
-        Luva_Check = new java.awt.Checkbox();
-        Jaq_Check = new java.awt.Checkbox();
-        Berm_Check = new java.awt.Checkbox();
-        Chinelo_Check = new java.awt.Checkbox();
-        Bone_Check = new java.awt.Checkbox();
         Preco_Label = new javax.swing.JLabel();
         Preco_Regata = new javax.swing.JLabel();
         Preco_Social = new javax.swing.JLabel();
@@ -56,21 +44,60 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
         Preco_Chinelo = new javax.swing.JLabel();
         Preco_Bone = new javax.swing.JLabel();
         Quant_Label = new javax.swing.JLabel();
-        Quant_Regata = new javax.swing.JTextField();
-        Quant_Social = new javax.swing.JTextField();
-        Quant_Blusa = new javax.swing.JTextField();
-        Quant_Pullover = new javax.swing.JTextField();
-        Quant_Sapato = new javax.swing.JTextField();
-        Quant_Calca = new javax.swing.JTextField();
-        Quant_Meia = new javax.swing.JTextField();
-        Quant_Luva = new javax.swing.JTextField();
-        Quant_Jaq = new javax.swing.JTextField();
-        Quant_Berm = new javax.swing.JTextField();
-        Quant_Chinelo = new javax.swing.JTextField();
-        Quant_Bone = new javax.swing.JTextField();
-        Sub_Button = new javax.swing.JButton();
+        Blusa_Quant = new javax.swing.JTextField();
+        Pullover_Quant = new javax.swing.JTextField();
+        Regata_Quant = new javax.swing.JTextField();
+        Social_Quant = new javax.swing.JTextField();
+        Sapato_Quant = new javax.swing.JTextField();
+        Calca_Quant = new javax.swing.JTextField();
+        Luva_Quant = new javax.swing.JTextField();
+        Meia_Quant = new javax.swing.JTextField();
+        Jaq_Quant = new javax.swing.JTextField();
+        Berm_Quant = new javax.swing.JTextField();
+        Chinelo_Quant = new javax.swing.JTextField();
+        Total_Label = new javax.swing.JLabel();
+        Tot_Regata = new javax.swing.JLabel();
+        Tot_Social = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        Bone_Quant = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        Regata_Check = new javax.swing.JCheckBox();
+        Social_Check = new javax.swing.JCheckBox();
+        Blusa_Check = new javax.swing.JCheckBox();
+        Pullover_Check = new javax.swing.JCheckBox();
+        Berm_Check = new javax.swing.JCheckBox();
+        Jaq_Check = new javax.swing.JCheckBox();
+        Chinelo_Check = new javax.swing.JCheckBox();
+        Bone_Check = new javax.swing.JCheckBox();
+        Sapato_Check = new javax.swing.JCheckBox();
+        Calca_Check = new javax.swing.JCheckBox();
+        Meia_Check = new javax.swing.JCheckBox();
+        Luva_Check = new javax.swing.JCheckBox();
         Sub_Label = new javax.swing.JLabel();
         Sub_Total = new javax.swing.JLabel();
+        Sub_Button = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jLabel14 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -78,47 +105,23 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
         Product_Label.setText("Produtos:");
 
-        Regata_Check.setLabel("Camiseta Regata");
-
-        Social_Check.setLabel("Camiseta Social");
-
-        Blusa_Check.setLabel("Blusa");
-
-        Pullover_Check.setLabel("Pullover");
-
-        Sapato_Check.setLabel("Sapato");
-
-        Calca_Check.setLabel("Calça");
-
-        Meia_Check.setLabel("Meias");
-
-        Luva_Check.setLabel("Luvas");
-
-        Jaq_Check.setLabel("Jaqueta");
-
-        Berm_Check.setLabel("Bermuda");
-
-        Chinelo_Check.setLabel("Chinelo");
-
-        Bone_Check.setLabel("Boné");
-
         Preco_Label.setText("Preço (em R$):");
 
-        Preco_Regata.setText("19.90");
+        Preco_Regata.setText("119,90");
 
-        Preco_Social.setText("59.90");
+        Preco_Social.setText("39,90");
 
-        Preco_Blusa.setText("119.90");
+        Preco_Blusa.setText("19,90");
 
-        Preco_Pullover.setText("39.90");
+        Preco_Pullover.setText("59,90");
 
         Preco_Sapato.setText("99.90");
 
         Preco_Calca.setText("38.90");
 
-        Preco_Meia.setText("9.90");
+        Preco_Meia.setText("24,90");
 
-        Preco_Luva.setText("24.90");
+        Preco_Luva.setText("9,90");
 
         Preco_Jaq.setText("329.90");
 
@@ -130,47 +133,221 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
         Quant_Label.setText("Quantidade:");
 
-        Quant_Regata.setEditable(false);
-        Quant_Regata.setText("0");
+        Blusa_Quant.setEditable(false);
+        Blusa_Quant.setText("0");
+        Blusa_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                caracteres(evt);
+            }
+        });
 
-        Quant_Social.setEditable(false);
-        Quant_Social.setText("0");
+        Pullover_Quant.setEditable(false);
+        Pullover_Quant.setText("0");
+        Pullover_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                caracteres(evt);
+            }
+        });
 
-        Quant_Blusa.setEditable(false);
-        Quant_Blusa.setText("0");
+        Regata_Quant.setEditable(false);
+        Regata_Quant.setText("0");
+        Regata_Quant.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Regata_QuantActionPerformed(evt);
+            }
+        });
+        Regata_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                caracteres(evt);
+            }
+        });
 
-        Quant_Pullover.setEditable(false);
-        Quant_Pullover.setText("0");
+        Social_Quant.setEditable(false);
+        Social_Quant.setText("0");
+        Social_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                caracteres(evt);
+            }
+        });
 
-        Quant_Sapato.setEditable(false);
-        Quant_Sapato.setText("0");
+        Sapato_Quant.setEditable(false);
+        Sapato_Quant.setText("0");
+        Sapato_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                caracteres(evt);
+            }
+        });
 
-        Quant_Calca.setEditable(false);
-        Quant_Calca.setText("0");
+        Calca_Quant.setEditable(false);
+        Calca_Quant.setText("0");
+        Calca_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                caracteres(evt);
+            }
+        });
 
-        Quant_Meia.setEditable(false);
-        Quant_Meia.setText("0");
+        Luva_Quant.setEditable(false);
+        Luva_Quant.setText("0");
+        Luva_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                caracteres(evt);
+            }
+        });
 
-        Quant_Luva.setEditable(false);
-        Quant_Luva.setText("0");
+        Meia_Quant.setEditable(false);
+        Meia_Quant.setText("0");
+        Meia_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                caracteres(evt);
+            }
+        });
 
-        Quant_Jaq.setEditable(false);
-        Quant_Jaq.setText("0");
+        Jaq_Quant.setEditable(false);
+        Jaq_Quant.setText("0");
+        Jaq_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                caracteres(evt);
+            }
+        });
 
-        Quant_Berm.setEditable(false);
-        Quant_Berm.setText("0");
+        Berm_Quant.setEditable(false);
+        Berm_Quant.setText("0");
+        Berm_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                caracteres(evt);
+            }
+        });
 
-        Quant_Chinelo.setEditable(false);
-        Quant_Chinelo.setText("0");
+        Chinelo_Quant.setEditable(false);
+        Chinelo_Quant.setText("0");
+        Chinelo_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                caracteres(evt);
+            }
+        });
 
-        Quant_Bone.setEditable(false);
-        Quant_Bone.setText("0");
+        Total_Label.setText("Total R$:");
 
-        Sub_Button.setText("Sub-Total");
+        Tot_Regata.setText("0.00");
 
-        Sub_Label.setText("Sub-Total:");
+        Tot_Social.setText("0.00");
 
-        Sub_Total.setText("0");
+        jLabel4.setText("0.00");
+
+        jLabel5.setText("0.00");
+
+        jLabel6.setText("0.00");
+
+        jLabel7.setText("0.00");
+
+        jLabel8.setText("0.00");
+
+        jLabel9.setText("0.00");
+
+        jLabel10.setText("0.00");
+
+        jLabel11.setText("0.00");
+
+        jLabel12.setText("0.00");
+
+        Bone_Quant.setEditable(false);
+        Bone_Quant.setText("0");
+        Bone_Quant.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Bone_QuantActionPerformed(evt);
+            }
+        });
+        Bone_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                caracteres(evt);
+            }
+        });
+
+        jLabel13.setText("0.00");
+
+        Regata_Check.setText("Camiseta Regata");
+        Regata_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Regata_CheckActionPerformed(evt);
+            }
+        });
+
+        Social_Check.setText("Camisa Social");
+        Social_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Social_CheckActionPerformed(evt);
+            }
+        });
+
+        Blusa_Check.setText("Blusa");
+        Blusa_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Blusa_CheckActionPerformed(evt);
+            }
+        });
+
+        Pullover_Check.setText("Pullover");
+        Pullover_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Pullover_CheckActionPerformed(evt);
+            }
+        });
+
+        Berm_Check.setText("Bermuda");
+        Berm_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Berm_CheckActionPerformed(evt);
+            }
+        });
+
+        Jaq_Check.setText("Jaqueta");
+        Jaq_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Jaq_CheckActionPerformed(evt);
+            }
+        });
+
+        Chinelo_Check.setText("Chinelo");
+        Chinelo_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Chinelo_CheckActionPerformed(evt);
+            }
+        });
+
+        Bone_Check.setText("Boné");
+        Bone_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Bone_CheckActionPerformed(evt);
+            }
+        });
+
+        Sapato_Check.setText("Sapato");
+        Sapato_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Sapato_CheckActionPerformed(evt);
+            }
+        });
+
+        Calca_Check.setText("Calça");
+        Calca_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Calca_CheckActionPerformed(evt);
+            }
+        });
+
+        Meia_Check.setText("Meias");
+        Meia_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Meia_CheckActionPerformed(evt);
+            }
+        });
+
+        Luva_Check.setText("Luva");
+        Luva_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Luva_CheckActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -178,205 +355,524 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Product_Label)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Calca_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Meia_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Berm_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Chinelo_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Product_Label)
-                                    .addComponent(Regata_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Social_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Pullover_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Sapato_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Luva_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Jaq_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Bone_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(100, 100, 100)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(Preco_Bone)
-                                        .addComponent(Preco_Luva)
-                                        .addComponent(Preco_Jaq)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(Preco_Meia)
-                                                    .addComponent(Preco_Berm)
-                                                    .addComponent(Preco_Chinelo))
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                        .addGap(125, 125, 125)
-                                                        .addComponent(Quant_Meia, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                                        .addGap(118, 118, 118)
-                                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                            .addComponent(Quant_Luva, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addComponent(Quant_Jaq, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addComponent(Quant_Berm, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addComponent(Quant_Chinelo, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addComponent(Quant_Bone, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                                            .addComponent(Preco_Sapato, javax.swing.GroupLayout.Alignment.LEADING)))
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                                        .addComponent(Preco_Calca)
-                                                        .addGap(125, 125, 125))
-                                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                        .addComponent(Preco_Social)
-                                                        .addGap(13, 13, 13)))
-                                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                                    .addComponent(Preco_Blusa)
-                                                    .addGap(122, 122, 122)))
-                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(Quant_Calca)
-                                                .addComponent(Quant_Sapato)
-                                                .addComponent(Quant_Pullover)
-                                                .addComponent(Quant_Social)))
-                                        .addComponent(Preco_Pullover, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                            .addComponent(Preco_Regata)
-                                            .addGap(129, 129, 129)
-                                            .addComponent(Quant_Regata))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                            .addGap(160, 160, 160)
-                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(Quant_Label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(Quant_Blusa))))))))
+                            .addComponent(Regata_Check)
+                            .addComponent(Social_Check)
+                            .addComponent(Blusa_Check)
+                            .addComponent(Pullover_Check)
+                            .addComponent(Jaq_Check)
+                            .addComponent(Berm_Check)
+                            .addComponent(Chinelo_Check)
+                            .addComponent(Bone_Check)
+                            .addComponent(Sapato_Check)
+                            .addComponent(Calca_Check)
+                            .addComponent(Meia_Check)
+                            .addComponent(Luva_Check))))
+                .addGap(104, 104, 104)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(111, 111, 111)
-                        .addComponent(Sub_Button)
-                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Preco_Regata)
+                            .addComponent(Preco_Calca)
+                            .addComponent(Preco_Luva)
+                            .addComponent(Preco_Meia)
+                            .addComponent(Preco_Jaq)
+                            .addComponent(Preco_Berm)
+                            .addComponent(Preco_Chinelo)
+                            .addComponent(Preco_Bone)
+                            .addComponent(Preco_Sapato))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Preco_Label)
+                            .addComponent(Preco_Pullover)
+                            .addComponent(Preco_Social)
+                            .addComponent(Preco_Blusa)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(Sub_Label)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Sub_Total)))))
-                .addGap(312, 312, 312))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Blusa_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(21, 21, 21)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(250, 250, 250)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(Jaq_Quant)
+                                            .addComponent(Quant_Label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(Regata_Quant)
+                                            .addComponent(Social_Quant)
+                                            .addComponent(Sapato_Quant, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(Blusa_Quant, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(Pullover_Quant)
+                                            .addComponent(Calca_Quant, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(Luva_Quant, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(Meia_Quant)
+                                            .addComponent(Berm_Quant)))
+                                    .addComponent(Chinelo_Quant, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Bone_Quant, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(99, 99, 99)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(Total_Label)
+                                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+                                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Tot_Social, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Tot_Regata, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Product_Label)
-                    .addComponent(Preco_Label)
-                    .addComponent(Quant_Label))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Preco_Blusa)
-                    .addComponent(Regata_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Quant_Blusa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(Social_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Blusa_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(4, 4, 4))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Quant_Pullover, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Preco_Pullover))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Preco_Regata)
-                            .addComponent(Quant_Regata, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Pullover_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Preco_Social)
-                    .addComponent(Quant_Social, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Sapato_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(Quant_Sapato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Preco_Sapato)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(Calca_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Preco_Calca))
-                            .addComponent(Quant_Calca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(Meia_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Preco_Meia))
-                            .addComponent(Quant_Meia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Luva_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Preco_Luva)
-                            .addComponent(Quant_Luva, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(Jaq_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Preco_Jaq))
-                            .addComponent(Quant_Jaq, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(Berm_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Preco_Berm, javax.swing.GroupLayout.Alignment.LEADING))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(4, 4, 4)
-                                .addComponent(Quant_Berm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(Chinelo_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(14, 14, 14)
-                                .addComponent(Bone_Check, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(Quant_Chinelo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(Preco_Chinelo)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Preco_Bone)
-                            .addComponent(Quant_Bone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Preco_Label)
+                        .addComponent(Product_Label))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Quant_Label)
+                        .addComponent(Total_Label)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Regata_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Tot_Regata))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Preco_Blusa)
+                        .addComponent(Regata_Check)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Preco_Pullover)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Social_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Tot_Social))
+                    .addComponent(Social_Check))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Preco_Regata)
+                    .addComponent(Blusa_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4)
+                    .addComponent(Blusa_Check))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(Preco_Social)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Pullover_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5)))
+                    .addComponent(Pullover_Check))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Sapato_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Preco_Sapato)
+                        .addComponent(Sapato_Check)))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Sub_Button)
-                    .addComponent(Sub_Label)
-                    .addComponent(Sub_Total))
-                .addContainerGap())
+                    .addComponent(Calca_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Preco_Calca)
+                    .addComponent(jLabel7)
+                    .addComponent(Calca_Check))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel8)
+                        .addComponent(Preco_Luva)
+                        .addComponent(Meia_Check))
+                    .addComponent(Luva_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Meia_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel9))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Preco_Meia)
+                        .addComponent(Luva_Check)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Preco_Jaq)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel10)
+                        .addComponent(Jaq_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Jaq_Check))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Preco_Berm)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel11)
+                        .addComponent(Berm_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Berm_Check))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Preco_Chinelo)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Chinelo_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel12))
+                    .addComponent(Chinelo_Check))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Preco_Bone)
+                        .addComponent(Bone_Check))
+                    .addComponent(Bone_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        Sub_Label.setText("Sub-Total: R$");
+
+        Sub_Total.setText("0,00");
+
+        Sub_Button.setText("Sub-Total");
+        Sub_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Sub_ButtonActionPerformed(evt);
+            }
+        });
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Forma de Pagamento:"));
+
+        jRadioButton1.setText("À Vista");
+
+        jRadioButton2.setText("À Prazo");
+
+        jLabel14.setText("Quantidade de Parcelas: ");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2", "3", "4", "5", "6" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+
+        jLabel15.setText("Total parcelado: R$");
+
+        jLabel16.setText("0.00");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioButton1)
+                            .addComponent(jRadioButton2)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel14)
+                                .addGap(88, 88, 88)
+                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGap(99, 99, 99))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jRadioButton1)
+                .addGap(18, 18, 18)
+                .addComponent(jRadioButton2)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(jLabel16))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLabel17.setText("Total de Desconto: R$");
+
+        jLabel18.setText("0.00");
+
+        jLabel19.setText("Total a Pagar: R$");
+
+        jLabel20.setText("0.00");
+
+        jButton1.setText("Calcular Total");
+
+        jButton2.setText("Limpar Tudo");
+
+        jButton3.setText("Fechar Formulário");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(82, 82, 82))
+                .addGap(203, 203, 203)
+                .addComponent(Sub_Button)
+                .addGap(87, 87, 87)
+                .addComponent(Sub_Label)
+                .addGap(29, 29, 29)
+                .addComponent(Sub_Total)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel17)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel19)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(49, 49, 49)
+                                .addComponent(jButton1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton2)
+                                .addGap(49, 49, 49))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton3)
+                        .addGap(159, 159, 159))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(20, 20, 20))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel17)
+                            .addComponent(jLabel18))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel20))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton1)
+                            .addComponent(jButton2))
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton3)))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Sub_Button)
+                    .addComponent(Sub_Label)
+                    .addComponent(Sub_Total))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Regata_QuantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Regata_QuantActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Regata_QuantActionPerformed
+
+    private void Bone_QuantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bone_QuantActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Bone_QuantActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void caracteres(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_caracteres
+       String caracter = "0987654321";
+       if(!caracter.contains(evt.getKeyChar()+"")){
+           evt.consume();
+       }
+    }//GEN-LAST:event_caracteres
+
+    private void Sub_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sub_ButtonActionPerformed
+        double quantiaRegata = Double.parseDouble(Regata_Quant.getText()) * 19.90;
+        double quantiaSocial = Double.parseDouble(Social_Quant.getText()) * 59.90;
+        double quantiaBlusa = Double.parseDouble(Blusa_Quant.getText()) * 119.90;
+        double quantiaPullover = Double.parseDouble(Pullover_Quant.getText()) * 39.90;
+        double quantiaSapato = Double.parseDouble(Sapato_Quant.getText()) * 99.90;
+        double quantiaCalca = Double.parseDouble(Calca_Quant.getText()) * 38.90;
+        double quantiaMeia = Double.parseDouble(Meia_Quant.getText()) * 9.90;
+        double quantiaLuva = Double.parseDouble(Luva_Quant.getText()) * 24.90;
+        double quantiaJaqueta = Double.parseDouble(Jaq_Quant.getText()) * 329.90;
+        double quantiaBermuda = Double.parseDouble(Berm_Quant.getText()) * 69.90;
+        double quantiaChinelo = Double.parseDouble(Chinelo_Quant.getText()) * 14.90;
+        double quantiaBone = Double.parseDouble(Bone_Quant.getText()) * 6.90;
+        double subtotal = quantiaRegata + quantiaSocial + quantiaBlusa + quantiaPullover + quantiaSapato + quantiaCalca + quantiaMeia + quantiaLuva + quantiaJaqueta + quantiaBermuda + quantiaChinelo + quantiaBone;
+        Sub_Total.setText(Double.toString(subtotal));
+    }//GEN-LAST:event_Sub_ButtonActionPerformed
+
+    private void Regata_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Regata_CheckActionPerformed
+        if(Regata_Check.isSelected() == true){
+            Regata_Quant.setText("");
+            Regata_Quant.setEditable(true);
+            Regata_Quant.requestFocus(true);
+        }
+        else{
+            Regata_Quant.setText("0");
+            Regata_Quant.setEditable(false);
+        }
+    }//GEN-LAST:event_Regata_CheckActionPerformed
+
+    private void Social_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Social_CheckActionPerformed
+        if(Social_Check.isSelected() == true){
+            Social_Quant.setText("");
+            Social_Quant.setEditable(true);
+            Social_Quant.requestFocus(true);
+        }
+        else{
+            Social_Quant.setEditable(false);
+            Social_Quant.setText("0");
+        }
+    }//GEN-LAST:event_Social_CheckActionPerformed
+
+    private void Blusa_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Blusa_CheckActionPerformed
+        if(Blusa_Check.isSelected() == true){
+            Blusa_Quant.setText("");
+            Blusa_Quant.setEditable(true);
+            Blusa_Quant.requestFocus(true);
+        }
+        else{
+            Blusa_Quant.setEditable(false);
+            Blusa_Quant.setText("0");
+        }
+    }//GEN-LAST:event_Blusa_CheckActionPerformed
+
+    private void Pullover_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pullover_CheckActionPerformed
+        if(Pullover_Check.isSelected() == true){
+            Pullover_Quant.setText("");
+            Pullover_Quant.setEditable(true);
+            Pullover_Quant.requestFocus(true);
+        }
+        else{
+            Pullover_Quant.setEditable(false);
+            Pullover_Quant.setText("0");
+        }
+    }//GEN-LAST:event_Pullover_CheckActionPerformed
+
+    private void Sapato_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sapato_CheckActionPerformed
+        if(Sapato_Check.isSelected() == true){
+            Sapato_Quant.setText("");
+            Sapato_Quant.setEditable(true);
+            Sapato_Quant.requestFocus(true);
+        }
+        else{
+            Sapato_Quant.setEditable(false);
+            Sapato_Quant.setText("0");
+        }
+    }//GEN-LAST:event_Sapato_CheckActionPerformed
+
+    private void Calca_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Calca_CheckActionPerformed
+        if(Calca_Check.isSelected() == true){
+            Calca_Quant.setText("");
+            Calca_Quant.setEditable(true);
+            Calca_Quant.requestFocus(true);
+        }
+        else{
+            Calca_Quant.setEditable(false);
+            Calca_Quant.setText("0");
+        }
+    }//GEN-LAST:event_Calca_CheckActionPerformed
+
+    private void Meia_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Meia_CheckActionPerformed
+        if(Meia_Check.isSelected() == true){
+            Meia_Quant.setText("0");
+            Meia_Quant.setEditable(true);
+            Meia_Quant.requestFocus(true);
+        }
+        else{
+            Meia_Quant.setEditable(false);
+            Meia_Quant.setText("0");
+        }
+    }//GEN-LAST:event_Meia_CheckActionPerformed
+
+    private void Luva_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Luva_CheckActionPerformed
+        if(Luva_Check.isSelected() == true){
+            Luva_Quant.setText("");
+            Luva_Quant.setEditable(true);
+            Luva_Quant.requestFocus(true);
+        }
+        else{
+            Luva_Quant.setEditable(false);
+            Luva_Quant.setText("0");
+        }
+    }//GEN-LAST:event_Luva_CheckActionPerformed
+
+    private void Jaq_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jaq_CheckActionPerformed
+        if(Jaq_Check.isSelected() == true){
+            Jaq_Quant.setText("");
+            Jaq_Quant.setEditable(true);
+            Jaq_Quant.requestFocus(true);
+        }
+        else{
+            Jaq_Quant.setEditable(false);
+            Jaq_Quant.setText("");
+        }
+    }//GEN-LAST:event_Jaq_CheckActionPerformed
+
+    private void Berm_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Berm_CheckActionPerformed
+        if(Berm_Check.isSelected() == true){
+            Berm_Quant.setText("");
+            Berm_Quant.setEditable(true);
+            Berm_Quant.requestFocus(true);
+        }
+        else{
+            Berm_Quant.setEditable(false);
+            Berm_Quant.setText("0");
+        }
+    }//GEN-LAST:event_Berm_CheckActionPerformed
+
+    private void Chinelo_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Chinelo_CheckActionPerformed
+        if(Chinelo_Check.isSelected() == true){
+            Chinelo_Quant.setText("");
+            Chinelo_Quant.setEditable(true);
+            Chinelo_Quant.requestFocus(true);
+        }
+        else{
+            Chinelo_Quant.setEditable(false);
+            Chinelo_Quant.setText("0");
+        }
+    }//GEN-LAST:event_Chinelo_CheckActionPerformed
+
+    private void Bone_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bone_CheckActionPerformed
+        if(Bone_Check.isSelected() == true){
+            Bone_Quant.setText("");
+            Bone_Quant.setEditable(true);
+            Bone_Quant.requestFocus(true);
+        }
+        else{
+            Bone_Quant.setEditable(false);
+            Bone_Quant.setText("0");
+        }
+    }//GEN-LAST:event_Bone_CheckActionPerformed
 
     /**
      * @param args the command line arguments
@@ -406,25 +902,31 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Frm_Calc_Financ().setVisible(true);
-                //if(Regata_Check.isSelected()){
-                    
-                //}
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Frm_Calc_Financ().setVisible(true);
+            //if(Regata_Check.isSelected()){
+            
+            //}
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Checkbox Berm_Check;
-    private java.awt.Checkbox Blusa_Check;
-    private java.awt.Checkbox Bone_Check;
-    private java.awt.Checkbox Calca_Check;
-    private java.awt.Checkbox Chinelo_Check;
-    private java.awt.Checkbox Jaq_Check;
-    private java.awt.Checkbox Luva_Check;
-    private java.awt.Checkbox Meia_Check;
+    private javax.swing.JCheckBox Berm_Check;
+    private javax.swing.JTextField Berm_Quant;
+    private javax.swing.JCheckBox Blusa_Check;
+    private javax.swing.JTextField Blusa_Quant;
+    private javax.swing.JCheckBox Bone_Check;
+    private javax.swing.JTextField Bone_Quant;
+    private javax.swing.JCheckBox Calca_Check;
+    private javax.swing.JTextField Calca_Quant;
+    private javax.swing.JCheckBox Chinelo_Check;
+    private javax.swing.JTextField Chinelo_Quant;
+    private javax.swing.JCheckBox Jaq_Check;
+    private javax.swing.JTextField Jaq_Quant;
+    private javax.swing.JCheckBox Luva_Check;
+    private javax.swing.JTextField Luva_Quant;
+    private javax.swing.JCheckBox Meia_Check;
+    private javax.swing.JTextField Meia_Quant;
     private javax.swing.JLabel Preco_Berm;
     private javax.swing.JLabel Preco_Blusa;
     private javax.swing.JLabel Preco_Bone;
@@ -439,26 +941,45 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
     private javax.swing.JLabel Preco_Sapato;
     private javax.swing.JLabel Preco_Social;
     private javax.swing.JLabel Product_Label;
-    private java.awt.Checkbox Pullover_Check;
-    private javax.swing.JTextField Quant_Berm;
-    private javax.swing.JTextField Quant_Blusa;
-    private javax.swing.JTextField Quant_Bone;
-    private javax.swing.JTextField Quant_Calca;
-    private javax.swing.JTextField Quant_Chinelo;
-    private javax.swing.JTextField Quant_Jaq;
+    private javax.swing.JCheckBox Pullover_Check;
+    private javax.swing.JTextField Pullover_Quant;
     private javax.swing.JLabel Quant_Label;
-    private javax.swing.JTextField Quant_Luva;
-    private javax.swing.JTextField Quant_Meia;
-    private javax.swing.JTextField Quant_Pullover;
-    private javax.swing.JTextField Quant_Regata;
-    private javax.swing.JTextField Quant_Sapato;
-    private javax.swing.JTextField Quant_Social;
-    private java.awt.Checkbox Regata_Check;
-    private java.awt.Checkbox Sapato_Check;
-    private java.awt.Checkbox Social_Check;
+    private javax.swing.JCheckBox Regata_Check;
+    private javax.swing.JTextField Regata_Quant;
+    private javax.swing.JCheckBox Sapato_Check;
+    private javax.swing.JTextField Sapato_Quant;
+    private javax.swing.JCheckBox Social_Check;
+    private javax.swing.JTextField Social_Quant;
     private javax.swing.JButton Sub_Button;
     private javax.swing.JLabel Sub_Label;
     private javax.swing.JLabel Sub_Total;
+    private javax.swing.JLabel Tot_Regata;
+    private javax.swing.JLabel Tot_Social;
+    private javax.swing.JLabel Total_Label;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
     // End of variables declaration//GEN-END:variables
 }

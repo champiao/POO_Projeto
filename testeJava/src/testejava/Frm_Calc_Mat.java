@@ -132,7 +132,7 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
                         .addComponent(N_Rotulo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(T_Numero, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 6, Short.MAX_VALUE))
                     .addComponent(T_Resultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(T_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -169,8 +169,18 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
         });
 
         G_Calc.setText("Calcular:");
+        G_Calc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                G_CalcActionPerformed(evt);
+            }
+        });
 
         G_Clear.setText("Limpar");
+        G_Clear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                G_ClearActionPerformed(evt);
+            }
+        });
 
         G_Sen.setText("Seno:");
 
@@ -188,25 +198,24 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(G_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(G_PainelLayout.createSequentialGroup()
-                        .addComponent(G_Cos)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(G_Cos_Res)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(G_PainelLayout.createSequentialGroup()
                         .addGroup(G_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, G_PainelLayout.createSequentialGroup()
+                            .addGroup(G_PainelLayout.createSequentialGroup()
                                 .addComponent(G_Rotulo)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(G_Numero, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(G_PainelLayout.createSequentialGroup()
                                 .addComponent(G_Sen)
-                                .addGap(23, 23, 23)))
-                        .addGroup(G_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(G_Numero, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(G_Sen_Res))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
+                                .addComponent(G_Sen_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                         .addGroup(G_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(G_Calc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(G_Clear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(G_Clear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(G_PainelLayout.createSequentialGroup()
+                        .addComponent(G_Cos)
+                        .addGap(18, 18, 18)
+                        .addComponent(G_Cos_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         G_PainelLayout.setVerticalGroup(
@@ -234,8 +243,18 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
         Fat_Rotulo.setText("Número:");
 
         Fat_Calc.setText("Calcular:");
+        Fat_Calc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Fat_CalcActionPerformed(evt);
+            }
+        });
 
         Fat_Clear.setText("Limpar");
+        Fat_Clear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Fat_ClearActionPerformed(evt);
+            }
+        });
 
         Fat_Res_Rotulo.setText("Resultado:");
 
@@ -260,7 +279,7 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
                     .addGroup(Fat_PainelLayout.createSequentialGroup()
                         .addComponent(Fat_Res_Rotulo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Fat_Res)
+                        .addComponent(Fat_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         Fat_PainelLayout.setVerticalGroup(
@@ -334,56 +353,58 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
                     .addGroup(Mult_PainelLayout.createSequentialGroup()
                         .addComponent(Mult_Rotulo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Mult_Numero, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Mult_Numero, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(52, 52, 52)
+                        .addGroup(Mult_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Mult_Clear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Mult_Calc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(Mult_PainelLayout.createSequentialGroup()
-                        .addGroup(Mult_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(Mult_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(Mult_PainelLayout.createSequentialGroup()
                                 .addComponent(Mult_Dobro_Rotulo)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Mult_Dobro_Res))
+                                .addComponent(Mult_Dobro_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Mult_Quadruplo_Rotulo))
                             .addGroup(Mult_PainelLayout.createSequentialGroup()
                                 .addComponent(Mult_Triplo_Rotulo)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Mult_Triplo_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Mult_Triplo_Res)))
-                        .addGap(44, 44, 44)
+                                .addComponent(Mult_Quintuplo_Rotulo)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(Mult_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(Mult_PainelLayout.createSequentialGroup()
-                                .addComponent(Mult_Quadruplo_Rotulo)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Mult_Quadruplo_Res))
-                            .addGroup(Mult_PainelLayout.createSequentialGroup()
-                                .addComponent(Mult_Quintuplo_Rotulo)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Mult_Quintuplo_Res)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(Mult_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(Mult_Clear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Mult_Calc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(21, 21, 21))
+                                .addComponent(Mult_Quintuplo_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(Mult_Quadruplo_Res, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addGap(28, 28, 28))
         );
         Mult_PainelLayout.setVerticalGroup(
             Mult_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Mult_PainelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(Mult_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Mult_Rotulo)
-                    .addComponent(Mult_Numero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Mult_Calc))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(Mult_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Mult_Clear)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Mult_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(Mult_Dobro_Rotulo)
-                        .addComponent(Mult_Dobro_Res)
-                        .addComponent(Mult_Quadruplo_Rotulo)
-                        .addComponent(Mult_Quadruplo_Res)))
+                    .addGroup(Mult_PainelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(Mult_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Mult_Rotulo)
+                            .addComponent(Mult_Numero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(Mult_Calc))
+                .addGap(8, 8, 8)
+                .addComponent(Mult_Clear)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(Mult_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Mult_Quadruplo_Rotulo)
+                    .addComponent(Mult_Quadruplo_Res)
+                    .addComponent(Mult_Dobro_Rotulo)
+                    .addComponent(Mult_Dobro_Res))
                 .addGap(18, 18, 18)
                 .addGroup(Mult_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Mult_Triplo_Rotulo)
                     .addComponent(Mult_Triplo_Res)
                     .addComponent(Mult_Quintuplo_Rotulo)
                     .addComponent(Mult_Quintuplo_Res))
-                .addGap(23, 23, 23))
+                .addContainerGap())
         );
 
         Pot_Painel.setBorder(javax.swing.BorderFactory.createTitledBorder("Potencia: "));
@@ -444,21 +465,22 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
                             .addGroup(Pot_PainelLayout.createSequentialGroup()
                                 .addComponent(Pot_Qadrado_Rotulo)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Pot_Quadrado_Res)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Pot_Quadrado_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(69, 69, 69)
                         .addGroup(Pot_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(Pot_PainelLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(Pot_5pot_Rotulo)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Pot_5pot_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(Pot_PainelLayout.createSequentialGroup()
                                 .addComponent(Pot_6pot_Rotulo)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Pot_6pot_Res))
-                            .addGroup(Pot_PainelLayout.createSequentialGroup()
-                                .addComponent(Pot_5pot_Rotulo)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Pot_5pot_Res))
-                            .addGroup(Pot_PainelLayout.createSequentialGroup()
+                                .addComponent(Pot_6pot_Res, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Pot_PainelLayout.createSequentialGroup()
                                 .addComponent(Pot_7pot_Rotulo)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Pot_7pot_Res)))
+                                .addComponent(Pot_7pot_Res, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGap(10, 10, 10)
                         .addGroup(Pot_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(Pot_Calc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -467,10 +489,10 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
                         .addGroup(Pot_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Pot_4pot_Rotulo)
                             .addComponent(Pot_Cubo_Rotulo))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(6, 6, 6)
                         .addGroup(Pot_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Pot_Cubo_Res)
-                            .addComponent(Pot_4pot_Res))
+                            .addComponent(Pot_Cubo_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Pot_4pot_Res, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         Pot_PainelLayout.setVerticalGroup(
@@ -544,7 +566,7 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
                     .addComponent(Med_4valor_Rotulo))
                 .addGap(18, 18, 18)
                 .addGroup(Med_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Med_4valor)
+                    .addComponent(Med_4valor, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
                     .addComponent(Med_3valor)
                     .addComponent(Med_1valor)
                     .addComponent(Med_2valor))
@@ -556,7 +578,7 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
                 .addGap(113, 113, 113)
                 .addComponent(Med_Res_Rotulo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Med_Res)
+                .addComponent(Med_Res, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         Med_PainelLayout.setVerticalGroup(
@@ -614,8 +636,8 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(Clear_All, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Close_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addComponent(Close_Button, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)
+                .addContainerGap())
         );
         Espec_PainelLayout.setVerticalGroup(
             Espec_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -633,19 +655,21 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(T_Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(G_Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(T_Painel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(G_Painel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Fat_Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Mult_Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Pot_Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Med_Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Espec_Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Fat_Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Mult_Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Med_Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Espec_Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(Pot_Painel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -792,8 +816,44 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
         Pot_Numero.setText("");
         T_Resultado.removeAll();
         T_Numero.setText("");
+        Fat_Res.setText("0");
+        Fat_Numero.setText("");
+        G_Sen_Res.setText("0");
+        G_Cos_Res.setText("0");
+        G_Numero.setText("");
         T_Numero.requestFocus();
     }//GEN-LAST:event_Clear_AllActionPerformed
+
+    private void Fat_CalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Fat_CalcActionPerformed
+        double x = Double.parseDouble(Fat_Numero.getText());
+        double f = x;
+        while(x > 1) {
+            f = f*(x-1);
+            x--;
+        }
+        Fat_Res.setText(Double.toString(f));
+    }//GEN-LAST:event_Fat_CalcActionPerformed
+
+    private void Fat_ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Fat_ClearActionPerformed
+       Fat_Res.setText("0");
+       Fat_Numero.setText("");
+       Fat_Numero.requestFocus(true);
+    }//GEN-LAST:event_Fat_ClearActionPerformed
+
+    private void G_CalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G_CalcActionPerformed
+        double x = Double.parseDouble(G_Numero.getText());
+        double rad = (Math.PI/180)*x;
+        double seno = Math.sin(rad);
+        double cosseno = Math.cos(rad);
+        G_Sen_Res.setText(Double.toString(seno));
+        G_Cos_Res.setText(Double.toString(cosseno));
+    }//GEN-LAST:event_G_CalcActionPerformed
+
+    private void G_ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G_ClearActionPerformed
+        G_Sen_Res.setText("0");
+        G_Cos_Res.setText("0");
+        G_Numero.setText("");
+    }//GEN-LAST:event_G_ClearActionPerformed
 
     /**
      * @param args the command line arguments
