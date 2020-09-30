@@ -5,18 +5,59 @@
  */
 package testejava;
 
+import javax.swing.JOptionPane;
+import java.text.DecimalFormat;
+
 /**
  *
  * @author  Rafael Assis
- */
+ */ 
 public class Frm_Calc_Financ extends javax.swing.JFrame {
 
+    DecimalFormat decimal = new DecimalFormat("#0.00");
+    public void calctotal() {
+       double quantiaRegata = Double.parseDouble(Regata_Quant.getText()) * 19.90;
+       double quantiaSocial = Double.parseDouble(Social_Quant.getText()) * 59.90;
+       double quantiaBlusa = Double.parseDouble(Blusa_Quant.getText()) * 119.90;
+       double quantiaPullover = Double.parseDouble(Pullover_Quant.getText()) * 39.90;
+       double quantiaSapato = Double.parseDouble(Sapato_Quant.getText()) * 99.90;
+       double quantiaCalca = Double.parseDouble(Calca_Quant.getText()) * 38.90;
+       double quantiaMeia = Double.parseDouble(Meia_Quant.getText()) * 9.90;
+       double quantiaLuva = Double.parseDouble(Luva_Quant.getText()) * 24.90;
+       double quantiaJaq = Double.parseDouble(Jaq_Quant.getText()) * 329.90;
+       double quantiaBerm = Double.parseDouble(Berm_Quant.getText()) * 69.90;
+       double quantiaChinelo = Double.parseDouble(Chinelo_Quant.getText()) * 14.90;
+       double quantiaBone = Double.parseDouble(Bone_Quant.getText()) * 6.90;
+       Tot_Regata.setText(decimal.format(quantiaRegata));
+       Tot_Social.setText(decimal.format(quantiaSocial));
+       Tot_Blusa.setText(decimal.format(quantiaBlusa));
+       Tot_Pullover.setText(decimal.format(quantiaPullover));
+       Tot_Sapato.setText(decimal.format(quantiaSapato));
+       Tot_Calca.setText(decimal.format(quantiaCalca));
+       Tot_Meia.setText(decimal.format(quantiaMeia));
+       Tot_Luva.setText(decimal.format(quantiaLuva));
+       Tot_Jaq.setText(decimal.format(quantiaJaq));
+       Tot_Berm.setText(decimal.format(quantiaBerm));
+       Tot_Chinelo.setText(decimal.format(quantiaChinelo));
+       Tot_Bone.setText(decimal.format(quantiaBone));
+       SubTotal = quantiaRegata + quantiaSocial + quantiaBlusa + quantiaPullover + quantiaSapato + quantiaCalca + quantiaMeia + quantiaLuva + quantiaJaq + quantiaBerm + quantiaChinelo + quantiaBone;
+       Sub_Total.setText(decimal.format(SubTotal));
+}
+    double SubTotal;
+    public void formaPag(){
+           if(RB_Praz.isSelected() == true){
+            Parc_Quant.setEnabled(true);
+        }
+        else{
+            Parc_Quant.setEnabled(false);
+        }
+    }
     /**
      * Creates new form Frm_Calc_Financ
      */
     public Frm_Calc_Financ() {
         initComponents();
-        
+        RB_Vis.setSelected(true);
     }
 
     /**
@@ -28,21 +69,22 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        RB_Formas = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         Product_Label = new javax.swing.JLabel();
         Preco_Label = new javax.swing.JLabel();
-        Preco_Regata = new javax.swing.JLabel();
-        Preco_Social = new javax.swing.JLabel();
-        Preco_Blusa = new javax.swing.JLabel();
-        Preco_Pullover = new javax.swing.JLabel();
-        Preco_Sapato = new javax.swing.JLabel();
-        Preco_Calca = new javax.swing.JLabel();
-        Preco_Meia = new javax.swing.JLabel();
-        Preco_Luva = new javax.swing.JLabel();
-        Preco_Jaq = new javax.swing.JLabel();
-        Preco_Berm = new javax.swing.JLabel();
-        Preco_Chinelo = new javax.swing.JLabel();
-        Preco_Bone = new javax.swing.JLabel();
+        Blusa_Preco = new javax.swing.JLabel();
+        Pullover_Preço = new javax.swing.JLabel();
+        Regata_Preco = new javax.swing.JLabel();
+        Social_Preco = new javax.swing.JLabel();
+        Sapato_Preco = new javax.swing.JLabel();
+        Calca_Preco = new javax.swing.JLabel();
+        Luva_Preco = new javax.swing.JLabel();
+        Meia_Preco = new javax.swing.JLabel();
+        Jaq_Preco = new javax.swing.JLabel();
+        Berm_Preco = new javax.swing.JLabel();
+        Chinelo_Preco = new javax.swing.JLabel();
+        Bone_Preco = new javax.swing.JLabel();
         Quant_Label = new javax.swing.JLabel();
         Blusa_Quant = new javax.swing.JTextField();
         Pullover_Quant = new javax.swing.JTextField();
@@ -58,17 +100,17 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
         Total_Label = new javax.swing.JLabel();
         Tot_Regata = new javax.swing.JLabel();
         Tot_Social = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        Tot_Blusa = new javax.swing.JLabel();
+        Tot_Pullover = new javax.swing.JLabel();
+        Tot_Sapato = new javax.swing.JLabel();
+        Tot_Calca = new javax.swing.JLabel();
+        Tot_Meia = new javax.swing.JLabel();
+        Tot_Luva = new javax.swing.JLabel();
+        Tot_Jaq = new javax.swing.JLabel();
+        Tot_Berm = new javax.swing.JLabel();
+        Tot_Chinelo = new javax.swing.JLabel();
         Bone_Quant = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
+        Tot_Bone = new javax.swing.JLabel();
         Regata_Check = new javax.swing.JCheckBox();
         Social_Check = new javax.swing.JCheckBox();
         Blusa_Check = new javax.swing.JCheckBox();
@@ -84,20 +126,20 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
         Sub_Label = new javax.swing.JLabel();
         Sub_Total = new javax.swing.JLabel();
         Sub_Button = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jLabel14 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        For_Pag = new javax.swing.JPanel();
+        RB_Vis = new javax.swing.JRadioButton();
+        RB_Praz = new javax.swing.JRadioButton();
+        Qt_Parc_Label = new javax.swing.JLabel();
+        Parc_Quant = new javax.swing.JComboBox();
+        Tot_Parc_label = new javax.swing.JLabel();
+        Tot_Parc = new javax.swing.JLabel();
+        Desc_Label = new javax.swing.JLabel();
+        Desc = new javax.swing.JLabel();
+        Total_Financ_Lable = new javax.swing.JLabel();
+        Total_Pag = new javax.swing.JLabel();
+        Calc_Total = new javax.swing.JButton();
+        Clear_All = new javax.swing.JButton();
+        Quit_Button = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -107,29 +149,29 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
         Preco_Label.setText("Preço (em R$):");
 
-        Preco_Regata.setText("119,90");
+        Blusa_Preco.setText("119,90");
 
-        Preco_Social.setText("39,90");
+        Pullover_Preço.setText("39,90");
 
-        Preco_Blusa.setText("19,90");
+        Regata_Preco.setText("19,90");
 
-        Preco_Pullover.setText("59,90");
+        Social_Preco.setText("59,90");
 
-        Preco_Sapato.setText("99.90");
+        Sapato_Preco.setText("99.90");
 
-        Preco_Calca.setText("38.90");
+        Calca_Preco.setText("38.90");
 
-        Preco_Meia.setText("24,90");
+        Luva_Preco.setText("24,90");
 
-        Preco_Luva.setText("9,90");
+        Meia_Preco.setText("9,90");
 
-        Preco_Jaq.setText("329.90");
+        Jaq_Preco.setText("329.90");
 
-        Preco_Berm.setText("69.90");
+        Berm_Preco.setText("69.90");
 
-        Preco_Chinelo.setText("14.90");
+        Chinelo_Preco.setText("14.90");
 
-        Preco_Bone.setText("6.90");
+        Bone_Preco.setText("6.90");
 
         Quant_Label.setText("Quantidade:");
 
@@ -232,23 +274,23 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
         Tot_Social.setText("0.00");
 
-        jLabel4.setText("0.00");
+        Tot_Blusa.setText("0.00");
 
-        jLabel5.setText("0.00");
+        Tot_Pullover.setText("0.00");
 
-        jLabel6.setText("0.00");
+        Tot_Sapato.setText("0.00");
 
-        jLabel7.setText("0.00");
+        Tot_Calca.setText("0.00");
 
-        jLabel8.setText("0.00");
+        Tot_Meia.setText("0.00");
 
-        jLabel9.setText("0.00");
+        Tot_Luva.setText("0.00");
 
-        jLabel10.setText("0.00");
+        Tot_Jaq.setText("0.00");
 
-        jLabel11.setText("0.00");
+        Tot_Berm.setText("0.00");
 
-        jLabel12.setText("0.00");
+        Tot_Chinelo.setText("0.00");
 
         Bone_Quant.setEditable(false);
         Bone_Quant.setText("0");
@@ -263,7 +305,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
             }
         });
 
-        jLabel13.setText("0.00");
+        Tot_Bone.setText("0.00");
 
         Regata_Check.setText("Camiseta Regata");
         Regata_Check.addActionListener(new java.awt.event.ActionListener() {
@@ -375,22 +417,22 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Preco_Regata)
-                            .addComponent(Preco_Calca)
-                            .addComponent(Preco_Luva)
-                            .addComponent(Preco_Meia)
-                            .addComponent(Preco_Jaq)
-                            .addComponent(Preco_Berm)
-                            .addComponent(Preco_Chinelo)
-                            .addComponent(Preco_Bone)
-                            .addComponent(Preco_Sapato))
+                            .addComponent(Blusa_Preco)
+                            .addComponent(Calca_Preco)
+                            .addComponent(Meia_Preco)
+                            .addComponent(Luva_Preco)
+                            .addComponent(Jaq_Preco)
+                            .addComponent(Berm_Preco)
+                            .addComponent(Chinelo_Preco)
+                            .addComponent(Bone_Preco)
+                            .addComponent(Sapato_Preco))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Preco_Label)
-                            .addComponent(Preco_Pullover)
-                            .addComponent(Preco_Social)
-                            .addComponent(Preco_Blusa)
+                            .addComponent(Social_Preco)
+                            .addComponent(Pullover_Preço)
+                            .addComponent(Regata_Preco)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(21, 21, 21)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -413,16 +455,16 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                                 .addGap(99, 99, 99)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(Total_Label)
-                                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
-                                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Tot_Bone, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+                                    .addComponent(Tot_Chinelo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Tot_Berm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Tot_Jaq, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Tot_Luva, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Tot_Meia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Tot_Calca, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Tot_Sapato, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Tot_Pullover, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Tot_Blusa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(Tot_Social, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(Tot_Regata, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -444,85 +486,85 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                         .addComponent(Regata_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Tot_Regata))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(Preco_Blusa)
+                        .addComponent(Regata_Preco)
                         .addComponent(Regata_Check)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Preco_Pullover)
+                    .addComponent(Social_Preco)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Social_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Tot_Social))
                     .addComponent(Social_Check))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Preco_Regata)
+                    .addComponent(Blusa_Preco)
                     .addComponent(Blusa_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4)
+                    .addComponent(Tot_Blusa)
                     .addComponent(Blusa_Check))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(Preco_Social)
+                        .addComponent(Pullover_Preço)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Pullover_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5)))
+                            .addComponent(Tot_Pullover)))
                     .addComponent(Pullover_Check))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
+                    .addComponent(Tot_Sapato)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Sapato_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(Preco_Sapato)
+                        .addComponent(Sapato_Preco)
                         .addComponent(Sapato_Check)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Calca_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Preco_Calca)
-                    .addComponent(jLabel7)
+                    .addComponent(Calca_Preco)
+                    .addComponent(Tot_Calca)
                     .addComponent(Calca_Check))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel8)
-                        .addComponent(Preco_Luva)
+                        .addComponent(Tot_Meia)
+                        .addComponent(Meia_Preco)
                         .addComponent(Meia_Check))
                     .addComponent(Luva_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Meia_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel9))
+                        .addComponent(Tot_Luva))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(Preco_Meia)
+                        .addComponent(Luva_Preco)
                         .addComponent(Luva_Check)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Preco_Jaq)
+                    .addComponent(Jaq_Preco)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel10)
+                        .addComponent(Tot_Jaq)
                         .addComponent(Jaq_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(Jaq_Check))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Preco_Berm)
+                    .addComponent(Berm_Preco)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel11)
+                        .addComponent(Tot_Berm)
                         .addComponent(Berm_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(Berm_Check))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Preco_Chinelo)
+                    .addComponent(Chinelo_Preco)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Chinelo_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel12))
+                        .addComponent(Tot_Chinelo))
                     .addComponent(Chinelo_Check))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(Preco_Bone)
+                        .addComponent(Bone_Preco)
                         .addComponent(Bone_Check))
                     .addComponent(Bone_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel13))
+                    .addComponent(Tot_Bone))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -537,81 +579,99 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
             }
         });
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Forma de Pagamento:"));
+        For_Pag.setBorder(javax.swing.BorderFactory.createTitledBorder("Forma de Pagamento:"));
 
-        jRadioButton1.setText("À Vista");
-
-        jRadioButton2.setText("À Prazo");
-
-        jLabel14.setText("Quantidade de Parcelas: ");
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2", "3", "4", "5", "6" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        RB_Formas.add(RB_Vis);
+        RB_Vis.setText("À Vista");
+        RB_Vis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                RB_VisActionPerformed(evt);
             }
         });
 
-        jLabel15.setText("Total parcelado: R$");
+        RB_Formas.add(RB_Praz);
+        RB_Praz.setText("À Prazo");
+        RB_Praz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RB_PrazActionPerformed(evt);
+            }
+        });
 
-        jLabel16.setText("0.00");
+        Qt_Parc_Label.setText("Quantidade de Parcelas: ");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        Parc_Quant.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2", "3", "4", "5", "6" }));
+        Parc_Quant.setEnabled(false);
+        Parc_Quant.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Parc_QuantActionPerformed(evt);
+            }
+        });
+
+        Tot_Parc_label.setText("Total parcelado: R$");
+
+        Tot_Parc.setText("0.00");
+
+        javax.swing.GroupLayout For_PagLayout = new javax.swing.GroupLayout(For_Pag);
+        For_Pag.setLayout(For_PagLayout);
+        For_PagLayout.setHorizontalGroup(
+            For_PagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(For_PagLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(For_PagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(For_PagLayout.createSequentialGroup()
+                        .addComponent(Tot_Parc_label, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton2)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel14)
+                        .addComponent(Tot_Parc, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(For_PagLayout.createSequentialGroup()
+                        .addGroup(For_PagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(RB_Vis)
+                            .addComponent(RB_Praz)
+                            .addGroup(For_PagLayout.createSequentialGroup()
+                                .addComponent(Qt_Parc_Label)
                                 .addGap(88, 88, 88)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(Parc_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(99, 99, 99))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        For_PagLayout.setVerticalGroup(
+            For_PagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(For_PagLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jRadioButton1)
+                .addComponent(RB_Vis)
                 .addGap(18, 18, 18)
-                .addComponent(jRadioButton2)
+                .addComponent(RB_Praz)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel14)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(For_PagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Qt_Parc_Label)
+                    .addComponent(Parc_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15)
-                    .addComponent(jLabel16))
+                .addGroup(For_PagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Tot_Parc_label)
+                    .addComponent(Tot_Parc))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel17.setText("Total de Desconto: R$");
+        Desc_Label.setText("Total de Desconto: R$");
 
-        jLabel18.setText("0.00");
+        Desc.setText("0.00");
 
-        jLabel19.setText("Total a Pagar: R$");
+        Total_Financ_Lable.setText("Total a Pagar: R$");
 
-        jLabel20.setText("0.00");
+        Total_Pag.setText("0.00");
 
-        jButton1.setText("Calcular Total");
-
-        jButton2.setText("Limpar Tudo");
-
-        jButton3.setText("Fechar Formulário");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        Calc_Total.setText("Calcular Total");
+        Calc_Total.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                Calc_TotalActionPerformed(evt);
+            }
+        });
+
+        Clear_All.setText("Limpar Tudo");
+
+        Quit_Button.setText("Fechar Formulário");
+        Quit_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Quit_ButtonActionPerformed(evt);
             }
         });
 
@@ -634,27 +694,27 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(For_Pag, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel17)
+                                        .addComponent(Desc_Label)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(Desc, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel19)
+                                        .addComponent(Total_Financ_Lable)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(Total_Pag, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(49, 49, 49)
-                                .addComponent(jButton1)
+                                .addComponent(Calc_Total)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton2)
+                                .addComponent(Clear_All)
                                 .addGap(49, 49, 49))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton3)
+                        .addComponent(Quit_Button)
                         .addGap(159, 159, 159))))
         );
         layout.setVerticalGroup(
@@ -664,21 +724,21 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(For_Pag, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel17)
-                            .addComponent(jLabel18))
+                            .addComponent(Desc_Label)
+                            .addComponent(Desc))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel20))
+                            .addComponent(Total_Financ_Lable)
+                            .addComponent(Total_Pag))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2))
+                            .addComponent(Calc_Total)
+                            .addComponent(Clear_All))
                         .addGap(18, 18, 18)
-                        .addComponent(jButton3)))
+                        .addComponent(Quit_Button)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Sub_Button)
@@ -698,13 +758,13 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Bone_QuantActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void Parc_QuantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Parc_QuantActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_Parc_QuantActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void Quit_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quit_ButtonActionPerformed
         dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_Quit_ButtonActionPerformed
 
     private void caracteres(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_caracteres
        String caracter = "0987654321";
@@ -714,20 +774,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
     }//GEN-LAST:event_caracteres
 
     private void Sub_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sub_ButtonActionPerformed
-        double quantiaRegata = Double.parseDouble(Regata_Quant.getText()) * 19.90;
-        double quantiaSocial = Double.parseDouble(Social_Quant.getText()) * 59.90;
-        double quantiaBlusa = Double.parseDouble(Blusa_Quant.getText()) * 119.90;
-        double quantiaPullover = Double.parseDouble(Pullover_Quant.getText()) * 39.90;
-        double quantiaSapato = Double.parseDouble(Sapato_Quant.getText()) * 99.90;
-        double quantiaCalca = Double.parseDouble(Calca_Quant.getText()) * 38.90;
-        double quantiaMeia = Double.parseDouble(Meia_Quant.getText()) * 9.90;
-        double quantiaLuva = Double.parseDouble(Luva_Quant.getText()) * 24.90;
-        double quantiaJaqueta = Double.parseDouble(Jaq_Quant.getText()) * 329.90;
-        double quantiaBermuda = Double.parseDouble(Berm_Quant.getText()) * 69.90;
-        double quantiaChinelo = Double.parseDouble(Chinelo_Quant.getText()) * 14.90;
-        double quantiaBone = Double.parseDouble(Bone_Quant.getText()) * 6.90;
-        double subtotal = quantiaRegata + quantiaSocial + quantiaBlusa + quantiaPullover + quantiaSapato + quantiaCalca + quantiaMeia + quantiaLuva + quantiaJaqueta + quantiaBermuda + quantiaChinelo + quantiaBone;
-        Sub_Total.setText(Double.toString(subtotal));
+       calctotal();
     }//GEN-LAST:event_Sub_ButtonActionPerformed
 
     private void Regata_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Regata_CheckActionPerformed
@@ -834,7 +881,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
         }
         else{
             Jaq_Quant.setEditable(false);
-            Jaq_Quant.setText("");
+            Jaq_Quant.setText("0");
         }
     }//GEN-LAST:event_Jaq_CheckActionPerformed
 
@@ -874,6 +921,30 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_Bone_CheckActionPerformed
 
+    private void Calc_TotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Calc_TotalActionPerformed
+        calctotal();
+        //double parcial = Double.parseDouble(Sub_Total.getText());
+        if (RB_Vis.isSelected() == true){
+            double totalDesc = SubTotal * 0.115;
+            double total = SubTotal - totalDesc;
+            Desc.setText(decimal.format(totalDesc));
+            Total_Pag.setText(decimal.format(total));
+        }
+        if(RB_Praz.isSelected() == true){
+            String parcelas = (String) Parc_Quant.getSelectedItem();
+            double jurParc = Double.parseDouble(parcelas) * 6.90;
+            Tot_Parc.setText(decimal.format(Double.parseDouble(Sub_Total.getText())));
+        }
+    }//GEN-LAST:event_Calc_TotalActionPerformed
+
+    private void RB_PrazActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RB_PrazActionPerformed
+        formaPag();
+    }//GEN-LAST:event_RB_PrazActionPerformed
+
+    private void RB_VisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RB_VisActionPerformed
+       formaPag();
+    }//GEN-LAST:event_RB_VisActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -912,74 +983,75 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBox Berm_Check;
+    private javax.swing.JLabel Berm_Preco;
     private javax.swing.JTextField Berm_Quant;
     private javax.swing.JCheckBox Blusa_Check;
+    private javax.swing.JLabel Blusa_Preco;
     private javax.swing.JTextField Blusa_Quant;
     private javax.swing.JCheckBox Bone_Check;
+    private javax.swing.JLabel Bone_Preco;
     private javax.swing.JTextField Bone_Quant;
+    private javax.swing.JButton Calc_Total;
     private javax.swing.JCheckBox Calca_Check;
+    private javax.swing.JLabel Calca_Preco;
     private javax.swing.JTextField Calca_Quant;
     private javax.swing.JCheckBox Chinelo_Check;
+    private javax.swing.JLabel Chinelo_Preco;
     private javax.swing.JTextField Chinelo_Quant;
+    private javax.swing.JButton Clear_All;
+    private javax.swing.JLabel Desc;
+    private javax.swing.JLabel Desc_Label;
+    private javax.swing.JPanel For_Pag;
     private javax.swing.JCheckBox Jaq_Check;
+    private javax.swing.JLabel Jaq_Preco;
     private javax.swing.JTextField Jaq_Quant;
     private javax.swing.JCheckBox Luva_Check;
+    private javax.swing.JLabel Luva_Preco;
     private javax.swing.JTextField Luva_Quant;
     private javax.swing.JCheckBox Meia_Check;
+    private javax.swing.JLabel Meia_Preco;
     private javax.swing.JTextField Meia_Quant;
-    private javax.swing.JLabel Preco_Berm;
-    private javax.swing.JLabel Preco_Blusa;
-    private javax.swing.JLabel Preco_Bone;
-    private javax.swing.JLabel Preco_Calca;
-    private javax.swing.JLabel Preco_Chinelo;
-    private javax.swing.JLabel Preco_Jaq;
+    private javax.swing.JComboBox Parc_Quant;
     private javax.swing.JLabel Preco_Label;
-    private javax.swing.JLabel Preco_Luva;
-    private javax.swing.JLabel Preco_Meia;
-    private javax.swing.JLabel Preco_Pullover;
-    private javax.swing.JLabel Preco_Regata;
-    private javax.swing.JLabel Preco_Sapato;
-    private javax.swing.JLabel Preco_Social;
     private javax.swing.JLabel Product_Label;
     private javax.swing.JCheckBox Pullover_Check;
+    private javax.swing.JLabel Pullover_Preço;
     private javax.swing.JTextField Pullover_Quant;
+    private javax.swing.JLabel Qt_Parc_Label;
     private javax.swing.JLabel Quant_Label;
+    private javax.swing.JButton Quit_Button;
+    private javax.swing.ButtonGroup RB_Formas;
+    private javax.swing.JRadioButton RB_Praz;
+    private javax.swing.JRadioButton RB_Vis;
     private javax.swing.JCheckBox Regata_Check;
+    private javax.swing.JLabel Regata_Preco;
     private javax.swing.JTextField Regata_Quant;
     private javax.swing.JCheckBox Sapato_Check;
+    private javax.swing.JLabel Sapato_Preco;
     private javax.swing.JTextField Sapato_Quant;
     private javax.swing.JCheckBox Social_Check;
+    private javax.swing.JLabel Social_Preco;
     private javax.swing.JTextField Social_Quant;
     private javax.swing.JButton Sub_Button;
     private javax.swing.JLabel Sub_Label;
     private javax.swing.JLabel Sub_Total;
+    private javax.swing.JLabel Tot_Berm;
+    private javax.swing.JLabel Tot_Blusa;
+    private javax.swing.JLabel Tot_Bone;
+    private javax.swing.JLabel Tot_Calca;
+    private javax.swing.JLabel Tot_Chinelo;
+    private javax.swing.JLabel Tot_Jaq;
+    private javax.swing.JLabel Tot_Luva;
+    private javax.swing.JLabel Tot_Meia;
+    private javax.swing.JLabel Tot_Parc;
+    private javax.swing.JLabel Tot_Parc_label;
+    private javax.swing.JLabel Tot_Pullover;
     private javax.swing.JLabel Tot_Regata;
+    private javax.swing.JLabel Tot_Sapato;
     private javax.swing.JLabel Tot_Social;
+    private javax.swing.JLabel Total_Financ_Lable;
     private javax.swing.JLabel Total_Label;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JComboBox jComboBox1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel Total_Pag;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
     // End of variables declaration//GEN-END:variables
 }

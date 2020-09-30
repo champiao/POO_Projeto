@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="RB_Formas">
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -39,34 +43,34 @@
                   <Group type="102" attributes="0">
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jPanel2" max="32767" attributes="0"/>
+                          <Component id="For_Pag" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Desc_Label" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jLabel18" min="-2" pref="153" max="-2" attributes="0"/>
+                                      <Component id="Desc" min="-2" pref="153" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
-                                      <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Total_Financ_Lable" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jLabel20" min="-2" pref="168" max="-2" attributes="0"/>
+                                      <Component id="Total_Pag" min="-2" pref="168" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                              <Component id="Calc_Total" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                              <Component id="Clear_All" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Quit_Button" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -80,24 +84,24 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="For_Pag" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Desc_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Desc" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Total_Financ_Lable" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Total_Pag" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Calc_Total" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Clear_All" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Quit_Button" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -149,24 +153,24 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="Preco_Regata" min="-2" max="-2" attributes="0"/>
-                              <Component id="Preco_Calca" min="-2" max="-2" attributes="0"/>
-                              <Component id="Preco_Luva" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="Preco_Meia" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="Preco_Jaq" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="Preco_Berm" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="Preco_Chinelo" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="Preco_Bone" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="Preco_Sapato" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Blusa_Preco" min="-2" max="-2" attributes="0"/>
+                              <Component id="Calca_Preco" min="-2" max="-2" attributes="0"/>
+                              <Component id="Meia_Preco" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Luva_Preco" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Jaq_Preco" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Berm_Preco" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Chinelo_Preco" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Bone_Preco" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Sapato_Preco" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="Preco_Label" min="-2" max="-2" attributes="0"/>
-                              <Component id="Preco_Pullover" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="Preco_Social" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="Preco_Blusa" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Social_Preco" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Pullover_Preço" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Regata_Preco" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -192,16 +196,16 @@
                                   <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="Total_Label" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel13" alignment="0" pref="126" max="32767" attributes="0"/>
-                                      <Component id="jLabel12" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel11" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel10" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel9" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel8" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel7" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="Tot_Bone" alignment="0" pref="126" max="32767" attributes="0"/>
+                                      <Component id="Tot_Chinelo" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="Tot_Berm" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="Tot_Jaq" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="Tot_Luva" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="Tot_Meia" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="Tot_Calca" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="Tot_Sapato" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="Tot_Pullover" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="Tot_Blusa" alignment="0" max="32767" attributes="0"/>
                                       <Component id="Tot_Social" alignment="0" max="32767" attributes="0"/>
                                       <Component id="Tot_Regata" alignment="0" max="32767" attributes="0"/>
                                   </Group>
@@ -234,13 +238,13 @@
                           <Component id="Tot_Regata" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="Preco_Blusa" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Regata_Preco" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Regata_Check" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="Preco_Pullover" min="-2" max="-2" attributes="0"/>
+                      <Component id="Social_Preco" min="-2" max="-2" attributes="0"/>
                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                           <Component id="Social_Quant" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Tot_Social" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -249,43 +253,43 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="Preco_Regata" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="Blusa_Preco" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="Blusa_Quant" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <Component id="Tot_Blusa" min="-2" max="-2" attributes="0"/>
                       <Component id="Blusa_Check" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="Preco_Social" min="-2" max="-2" attributes="0"/>
+                          <Component id="Pullover_Preço" min="-2" max="-2" attributes="0"/>
                           <Group type="103" alignment="1" groupAlignment="3" attributes="0">
                               <Component id="Pullover_Quant" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Tot_Pullover" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Component id="Pullover_Check" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <Component id="Tot_Sapato" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="Sapato_Quant" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Preco_Sapato" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Sapato_Preco" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Sapato_Check" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="Calca_Quant" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="Preco_Calca" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Calca_Preco" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Tot_Calca" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="Calca_Check" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Preco_Luva" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Tot_Meia" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Meia_Preco" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Meia_Check" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="Luva_Quant" min="-2" max="-2" attributes="0"/>
@@ -294,48 +298,48 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="Meia_Quant" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Tot_Luva" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="Preco_Meia" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Luva_Preco" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Luva_Check" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="Preco_Jaq" min="-2" max="-2" attributes="0"/>
+                      <Component id="Jaq_Preco" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Tot_Jaq" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Jaq_Quant" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="Jaq_Check" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="Preco_Berm" min="-2" max="-2" attributes="0"/>
+                      <Component id="Berm_Preco" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Tot_Berm" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Berm_Quant" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="Berm_Check" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="Preco_Chinelo" min="-2" max="-2" attributes="0"/>
+                      <Component id="Chinelo_Preco" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="Chinelo_Quant" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Tot_Chinelo" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="Chinelo_Check" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="Preco_Bone" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Bone_Preco" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Bone_Check" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="Bone_Quant" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                      <Component id="Tot_Bone" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -353,62 +357,62 @@
             <Property name="text" type="java.lang.String" value="Pre&#xe7;o (em R$):"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Preco_Regata">
+        <Component class="javax.swing.JLabel" name="Blusa_Preco">
           <Properties>
             <Property name="text" type="java.lang.String" value="119,90"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Preco_Social">
+        <Component class="javax.swing.JLabel" name="Pullover_Pre&#xe7;o">
           <Properties>
             <Property name="text" type="java.lang.String" value="39,90"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Preco_Blusa">
+        <Component class="javax.swing.JLabel" name="Regata_Preco">
           <Properties>
             <Property name="text" type="java.lang.String" value="19,90"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Preco_Pullover">
+        <Component class="javax.swing.JLabel" name="Social_Preco">
           <Properties>
             <Property name="text" type="java.lang.String" value="59,90"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Preco_Sapato">
+        <Component class="javax.swing.JLabel" name="Sapato_Preco">
           <Properties>
             <Property name="text" type="java.lang.String" value="99.90"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Preco_Calca">
+        <Component class="javax.swing.JLabel" name="Calca_Preco">
           <Properties>
             <Property name="text" type="java.lang.String" value="38.90"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Preco_Meia">
+        <Component class="javax.swing.JLabel" name="Luva_Preco">
           <Properties>
             <Property name="text" type="java.lang.String" value="24,90"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Preco_Luva">
+        <Component class="javax.swing.JLabel" name="Meia_Preco">
           <Properties>
             <Property name="text" type="java.lang.String" value="9,90"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Preco_Jaq">
+        <Component class="javax.swing.JLabel" name="Jaq_Preco">
           <Properties>
             <Property name="text" type="java.lang.String" value="329.90"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Preco_Berm">
+        <Component class="javax.swing.JLabel" name="Berm_Preco">
           <Properties>
             <Property name="text" type="java.lang.String" value="69.90"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Preco_Chinelo">
+        <Component class="javax.swing.JLabel" name="Chinelo_Preco">
           <Properties>
             <Property name="text" type="java.lang.String" value="14.90"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Preco_Bone">
+        <Component class="javax.swing.JLabel" name="Bone_Preco">
           <Properties>
             <Property name="text" type="java.lang.String" value="6.90"/>
           </Properties>
@@ -533,47 +537,47 @@
             <Property name="text" type="java.lang.String" value="0.00"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel4">
+        <Component class="javax.swing.JLabel" name="Tot_Blusa">
           <Properties>
             <Property name="text" type="java.lang.String" value="0.00"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel5">
+        <Component class="javax.swing.JLabel" name="Tot_Pullover">
           <Properties>
             <Property name="text" type="java.lang.String" value="0.00"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel6">
+        <Component class="javax.swing.JLabel" name="Tot_Sapato">
           <Properties>
             <Property name="text" type="java.lang.String" value="0.00"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel7">
+        <Component class="javax.swing.JLabel" name="Tot_Calca">
           <Properties>
             <Property name="text" type="java.lang.String" value="0.00"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel8">
+        <Component class="javax.swing.JLabel" name="Tot_Meia">
           <Properties>
             <Property name="text" type="java.lang.String" value="0.00"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel9">
+        <Component class="javax.swing.JLabel" name="Tot_Luva">
           <Properties>
             <Property name="text" type="java.lang.String" value="0.00"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel10">
+        <Component class="javax.swing.JLabel" name="Tot_Jaq">
           <Properties>
             <Property name="text" type="java.lang.String" value="0.00"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel11">
+        <Component class="javax.swing.JLabel" name="Tot_Berm">
           <Properties>
             <Property name="text" type="java.lang.String" value="0.00"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel12">
+        <Component class="javax.swing.JLabel" name="Tot_Chinelo">
           <Properties>
             <Property name="text" type="java.lang.String" value="0.00"/>
           </Properties>
@@ -588,7 +592,7 @@
             <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="caracteres"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel13">
+        <Component class="javax.swing.JLabel" name="Tot_Bone">
           <Properties>
             <Property name="text" type="java.lang.String" value="0.00"/>
           </Properties>
@@ -709,7 +713,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Sub_ButtonActionPerformed"/>
       </Events>
     </Component>
-    <Container class="javax.swing.JPanel" name="jPanel2">
+    <Container class="javax.swing.JPanel" name="For_Pag">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
@@ -725,18 +729,18 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLabel15" min="-2" pref="117" max="-2" attributes="0"/>
+                          <Component id="Tot_Parc_label" min="-2" pref="117" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="jLabel16" min="-2" pref="185" max="-2" attributes="0"/>
+                          <Component id="Tot_Parc" min="-2" pref="185" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jRadioButton1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jRadioButton2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="RB_Vis" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="RB_Praz" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Qt_Parc_Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
-                                  <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Parc_Quant" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -750,18 +754,18 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="RB_Vis" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                  <Component id="RB_Praz" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Qt_Parc_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Parc_Quant" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Tot_Parc_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Tot_Parc" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -769,22 +773,34 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+        <Component class="javax.swing.JRadioButton" name="RB_Vis">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="RB_Formas"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="&#xc0; Vista"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RB_VisActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+        <Component class="javax.swing.JRadioButton" name="RB_Praz">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="RB_Formas"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="&#xc0; Prazo"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RB_PrazActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel14">
+        <Component class="javax.swing.JLabel" name="Qt_Parc_Label">
           <Properties>
             <Property name="text" type="java.lang.String" value="Quantidade de Parcelas: "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox1">
+        <Component class="javax.swing.JComboBox" name="Parc_Quant">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="5">
@@ -795,59 +811,63 @@
                 <StringItem index="4" value="6"/>
               </StringArray>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Parc_QuantActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel15">
+        <Component class="javax.swing.JLabel" name="Tot_Parc_label">
           <Properties>
             <Property name="text" type="java.lang.String" value="Total parcelado: R$"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel16">
+        <Component class="javax.swing.JLabel" name="Tot_Parc">
           <Properties>
             <Property name="text" type="java.lang.String" value="0.00"/>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="jLabel17">
+    <Component class="javax.swing.JLabel" name="Desc_Label">
       <Properties>
         <Property name="text" type="java.lang.String" value="Total de Desconto: R$"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel18">
+    <Component class="javax.swing.JLabel" name="Desc">
       <Properties>
         <Property name="text" type="java.lang.String" value="0.00"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel19">
+    <Component class="javax.swing.JLabel" name="Total_Financ_Lable">
       <Properties>
         <Property name="text" type="java.lang.String" value="Total a Pagar: R$"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel20">
+    <Component class="javax.swing.JLabel" name="Total_Pag">
       <Properties>
         <Property name="text" type="java.lang.String" value="0.00"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="Calc_Total">
       <Properties>
         <Property name="text" type="java.lang.String" value="Calcular Total"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Calc_TotalActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="Clear_All">
       <Properties>
         <Property name="text" type="java.lang.String" value="Limpar Tudo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="Quit_Button">
       <Properties>
         <Property name="text" type="java.lang.String" value="Fechar Formul&#xe1;rio"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Quit_ButtonActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
