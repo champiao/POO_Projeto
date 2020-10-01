@@ -74,7 +74,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
         Product_Label = new javax.swing.JLabel();
         Preco_Label = new javax.swing.JLabel();
         Blusa_Preco = new javax.swing.JLabel();
-        Pullover_Preço = new javax.swing.JLabel();
+        Pullover_Preco = new javax.swing.JLabel();
         Regata_Preco = new javax.swing.JLabel();
         Social_Preco = new javax.swing.JLabel();
         Sapato_Preco = new javax.swing.JLabel();
@@ -151,7 +151,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
         Blusa_Preco.setText("119,90");
 
-        Pullover_Preço.setText("39,90");
+        Pullover_Preco.setText("39,90");
 
         Regata_Preco.setText("19,90");
 
@@ -436,7 +436,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Preco_Label)
                             .addComponent(Social_Preco)
-                            .addComponent(Pullover_Preço)
+                            .addComponent(Pullover_Preco)
                             .addComponent(Regata_Preco)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(21, 21, 21)
@@ -509,7 +509,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(Pullover_Preço)
+                        .addComponent(Pullover_Preco)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Pullover_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Tot_Pullover)))
@@ -943,9 +943,9 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
             if(SubTotal > 10){
                 String parcelas = (String) Parc_Quant.getSelectedItem();
                 double jurParc = Double.parseDouble(parcelas) * 6.90;
-                double Porc = SubTotal * 0.01;
+                double Porcentagem = SubTotal * 0.01;
                 Desc.setText("0.00");
-                Tot_Parc.setText(decimal.format(SubTotal + jurParc + Porc));
+                Tot_Parc.setText(decimal.format(SubTotal) + decimal.format(jurParc) + decimal.format(Porcentagem));
                 Total_Pag.setText(decimal.format(Tot_Parc));
             }
             else{
@@ -1091,7 +1091,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
     private javax.swing.JLabel Preco_Label;
     private javax.swing.JLabel Product_Label;
     private javax.swing.JCheckBox Pullover_Check;
-    private javax.swing.JLabel Pullover_Preço;
+    private javax.swing.JLabel Pullover_Preco;
     private javax.swing.JTextField Pullover_Quant;
     private javax.swing.JLabel Qt_Parc_Label;
     private javax.swing.JLabel Quant_Label;
