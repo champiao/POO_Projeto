@@ -185,8 +185,8 @@
                                               <Component id="Blusa_Quant" alignment="1" max="32767" attributes="0"/>
                                               <Component id="Pullover_Quant" alignment="0" max="32767" attributes="0"/>
                                               <Component id="Calca_Quant" alignment="1" max="32767" attributes="0"/>
-                                              <Component id="Luva_Quant" alignment="1" max="32767" attributes="0"/>
-                                              <Component id="Meia_Quant" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="Meia_Quant" alignment="1" max="32767" attributes="0"/>
+                                              <Component id="Luva_Quant" alignment="0" max="32767" attributes="0"/>
                                               <Component id="Berm_Quant" alignment="0" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -292,12 +292,12 @@
                           <Component id="Meia_Preco" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Meia_Check" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="Luva_Quant" min="-2" max="-2" attributes="0"/>
+                      <Component id="Meia_Quant" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="Meia_Quant" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Luva_Quant" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Tot_Luva" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
@@ -477,16 +477,17 @@
             <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="caracteres"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="Luva_Quant">
+        <Component class="javax.swing.JTextField" name="Meia_Quant">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
           <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Meia_QuantActionPerformed"/>
             <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="caracteres"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="Meia_Quant">
+        <Component class="javax.swing.JTextField" name="Luva_Quant">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="0"/>
@@ -861,6 +862,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Limpar Tudo"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Clear_AllActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Quit_Button">
       <Properties>

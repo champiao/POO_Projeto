@@ -92,8 +92,8 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
         Social_Quant = new javax.swing.JTextField();
         Sapato_Quant = new javax.swing.JTextField();
         Calca_Quant = new javax.swing.JTextField();
-        Luva_Quant = new javax.swing.JTextField();
         Meia_Quant = new javax.swing.JTextField();
+        Luva_Quant = new javax.swing.JTextField();
         Jaq_Quant = new javax.swing.JTextField();
         Berm_Quant = new javax.swing.JTextField();
         Chinelo_Quant = new javax.swing.JTextField();
@@ -228,17 +228,22 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
             }
         });
 
-        Luva_Quant.setEditable(false);
-        Luva_Quant.setText("0");
-        Luva_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+        Meia_Quant.setEditable(false);
+        Meia_Quant.setText("0");
+        Meia_Quant.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Meia_QuantActionPerformed(evt);
+            }
+        });
+        Meia_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 caracteres(evt);
             }
         });
 
-        Meia_Quant.setEditable(false);
-        Meia_Quant.setText("0");
-        Meia_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
+        Luva_Quant.setEditable(false);
+        Luva_Quant.setText("0");
+        Luva_Quant.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 caracteres(evt);
             }
@@ -447,8 +452,8 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                                             .addComponent(Blusa_Quant, javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(Pullover_Quant)
                                             .addComponent(Calca_Quant, javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(Luva_Quant, javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(Meia_Quant)
+                                            .addComponent(Meia_Quant, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(Luva_Quant)
                                             .addComponent(Berm_Quant)))
                                     .addComponent(Chinelo_Quant, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Bone_Quant, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -528,11 +533,11 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                         .addComponent(Tot_Meia)
                         .addComponent(Meia_Preco)
                         .addComponent(Meia_Check))
-                    .addComponent(Luva_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Meia_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(Meia_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Luva_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Tot_Luva))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Luva_Preco)
@@ -667,6 +672,11 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
         });
 
         Clear_All.setText("Limpar Tudo");
+        Clear_All.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Clear_AllActionPerformed(evt);
+            }
+        });
 
         Quit_Button.setText("Fechar Formulário");
         Quit_Button.addActionListener(new java.awt.event.ActionListener() {
@@ -851,7 +861,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Meia_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Meia_CheckActionPerformed
         if(Meia_Check.isSelected() == true){
-            Meia_Quant.setText("0");
+            Meia_Quant.setText("");
             Meia_Quant.setEditable(true);
             Meia_Quant.requestFocus(true);
         }
@@ -923,7 +933,6 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Calc_TotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Calc_TotalActionPerformed
         calctotal();
-        //double parcial = Double.parseDouble(Sub_Total.getText());
         if (RB_Vis.isSelected() == true){
             double totalDesc = SubTotal * 0.115;
             double total = SubTotal - totalDesc;
@@ -931,9 +940,17 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
             Total_Pag.setText(decimal.format(total));
         }
         if(RB_Praz.isSelected() == true){
-            String parcelas = (String) Parc_Quant.getSelectedItem();
-            double jurParc = Double.parseDouble(parcelas) * 6.90;
-            Tot_Parc.setText(decimal.format(Double.parseDouble(Sub_Total.getText())));
+            if(SubTotal > 10){
+                String parcelas = (String) Parc_Quant.getSelectedItem();
+                double jurParc = Double.parseDouble(parcelas) * 6.90;
+                double Porc = SubTotal * 0.01;
+                Desc.setText("0.00");
+                Tot_Parc.setText(decimal.format(SubTotal + jurParc + Porc));
+                Total_Pag.setText(decimal.format(Tot_Parc));
+            }
+            else{
+                int confirma = JOptionPane.showConfirmDialog(this,"O valor para opção de pagamento deve ser maior que R$10.00","Sair",JOptionPane.OK_OPTION);
+            }
         }
     }//GEN-LAST:event_Calc_TotalActionPerformed
 
@@ -944,6 +961,65 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
     private void RB_VisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RB_VisActionPerformed
        formaPag();
     }//GEN-LAST:event_RB_VisActionPerformed
+
+    private void Meia_QuantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Meia_QuantActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Meia_QuantActionPerformed
+
+    private void Clear_AllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Clear_AllActionPerformed
+        Regata_Check.setSelected(false);
+        Social_Check.setSelected(false);
+        Blusa_Check.setSelected(false);
+        Pullover_Check.setSelected(false);
+        Sapato_Check.setSelected(false);
+        Calca_Check.setSelected(false);
+        Meia_Check.setSelected(false);
+        Luva_Check.setSelected(false);
+        Jaq_Check.setSelected(false);
+        Berm_Check.setSelected(false);
+        Chinelo_Check.setSelected(false);
+        Bone_Check.setSelected(false);
+        Regata_Quant.setEnabled(false);
+        Social_Quant.setEnabled(false);
+        Blusa_Quant.setEnabled(false);
+        Pullover_Quant.setEnabled(false);
+        Sapato_Quant.setEnabled(false);
+        Calca_Quant.setEnabled(false);
+        Meia_Quant.setEnabled(false);
+        Luva_Quant.setEditable(false);
+        Jaq_Quant.setEnabled(false);
+        Berm_Quant.setEnabled(false);
+        Chinelo_Quant.setEditable(false);
+        Bone_Quant.setEditable(false);
+        Regata_Quant.setText("0");
+        Social_Quant.setText("0");
+        Blusa_Quant.setText("0");
+        Pullover_Quant.setText("0");
+        Sapato_Quant.setText("0");
+        Calca_Quant.setText("0");
+        Meia_Quant.setText("0");
+        Luva_Quant.setText("0");
+        Jaq_Quant.setText("0");
+        Berm_Quant.setText("0");
+        Chinelo_Quant.setText("0");
+        Bone_Quant.setText("0");
+        Tot_Regata.setText("0.00");
+        Tot_Social.setText("0.00");
+        Tot_Blusa.setText("0.00");
+        Tot_Pullover.setText("0.00");
+        Tot_Sapato.setText("0.00");
+        Tot_Calca.setText("0.00");
+        Tot_Meia.setText("0.00");
+        Tot_Luva.setText("0.00");
+        Tot_Jaq.setText("0.00");
+        Tot_Berm.setText("0.00");
+        Tot_Chinelo.setText("0.00");
+        Tot_Bone.setText("0.00");
+        Sub_Total.setText("0.00");
+        Tot_Parc.setText("0.00");
+        Desc.setText("0.00");
+        Total_Pag.setText("0.00");
+    }//GEN-LAST:event_Clear_AllActionPerformed
 
     /**
      * @param args the command line arguments
