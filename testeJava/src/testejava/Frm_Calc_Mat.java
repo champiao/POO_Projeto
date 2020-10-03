@@ -77,8 +77,8 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
         Pot_5pot_Res = new javax.swing.JLabel();
         Pot_6pot_Rotulo = new javax.swing.JLabel();
         Pot_6pot_Res = new javax.swing.JLabel();
-        Pot_7pot_Rotulo = new javax.swing.JLabel();
-        Pot_7pot_Res = new javax.swing.JLabel();
+        Raiz_Label = new javax.swing.JLabel();
+        Raiz_Res = new javax.swing.JLabel();
         Med_Painel = new javax.swing.JPanel();
         Med_Calc = new javax.swing.JButton();
         Med_Clear = new javax.swing.JButton();
@@ -445,9 +445,9 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
 
         Pot_6pot_Res.setText("0");
 
-        Pot_7pot_Rotulo.setText("7° Potencia:");
+        Raiz_Label.setText("Raiz Quadrada:");
 
-        Pot_7pot_Res.setText("0");
+        Raiz_Res.setText("0");
 
         javax.swing.GroupLayout Pot_PainelLayout = new javax.swing.GroupLayout(Pot_Painel);
         Pot_Painel.setLayout(Pot_PainelLayout);
@@ -478,9 +478,9 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(Pot_6pot_Res, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Pot_PainelLayout.createSequentialGroup()
-                                .addComponent(Pot_7pot_Rotulo)
+                                .addComponent(Raiz_Label)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Pot_7pot_Res, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addComponent(Raiz_Res, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGap(10, 10, 10)
                         .addGroup(Pot_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(Pot_Calc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -520,8 +520,8 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
                 .addGroup(Pot_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Pot_4pot_Rotulo)
                     .addComponent(Pot_4pot_Res)
-                    .addComponent(Pot_7pot_Rotulo)
-                    .addComponent(Pot_7pot_Res))
+                    .addComponent(Raiz_Label)
+                    .addComponent(Raiz_Res))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -738,13 +738,13 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
         double quarta = Math.pow(base, 4);
         double quinta = Math.pow(base, 5);
         double sexta = Math.pow(base, 6);
-        double setima = Math.pow(base, 7);
+        double raiz = Math.sqrt(base);
         Pot_Quadrado_Res.setText(Double.toString(quadrado));
         Pot_Cubo_Res.setText(Double.toString(cubo));
         Pot_4pot_Res.setText(Double.toString(quarta));
         Pot_5pot_Res.setText(Double.toString(quinta));
         Pot_6pot_Res.setText(Double.toString(sexta));
-        Pot_7pot_Res.setText(Double.toString(setima));
+        Raiz_Res.setText(Double.toString(raiz));
     }//GEN-LAST:event_Pot_CalcActionPerformed
 
     private void Pot_ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pot_ClearActionPerformed
@@ -753,7 +753,7 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
         Pot_4pot_Res.setText("0");
         Pot_5pot_Res.setText("0");
         Pot_6pot_Res.setText("0");
-        Pot_7pot_Res.setText("0");
+        Raiz_Res.setText("0");
         Pot_Numero.setText("");
         Pot_Numero.requestFocus(true);
     }//GEN-LAST:event_Pot_ClearActionPerformed
@@ -812,7 +812,7 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
         Pot_4pot_Res.setText("0");
         Pot_5pot_Res.setText("0");
         Pot_6pot_Res.setText("0");
-        Pot_7pot_Res.setText("0");
+        Raiz_Res.setText("0");
         Pot_Numero.setText("");
         T_Resultado.removeAll();
         T_Numero.setText("");
@@ -944,8 +944,6 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
     private javax.swing.JLabel Pot_5pot_Rotulo;
     private javax.swing.JLabel Pot_6pot_Res;
     private javax.swing.JLabel Pot_6pot_Rotulo;
-    private javax.swing.JLabel Pot_7pot_Res;
-    private javax.swing.JLabel Pot_7pot_Rotulo;
     private javax.swing.JButton Pot_Calc;
     private javax.swing.JButton Pot_Clear;
     private javax.swing.JLabel Pot_Cubo_Res;
@@ -955,6 +953,8 @@ public class Frm_Calc_Mat extends javax.swing.JFrame {
     private javax.swing.JLabel Pot_Qadrado_Rotulo;
     private javax.swing.JLabel Pot_Quadrado_Res;
     private javax.swing.JLabel Pot_Rotulo;
+    private javax.swing.JLabel Raiz_Label;
+    private javax.swing.JLabel Raiz_Res;
     private javax.swing.JButton T_Calc;
     private javax.swing.JButton T_Clear;
     private javax.swing.JTextField T_Numero;

@@ -5,6 +5,7 @@
  */
 package testejava;
 
+import java.awt.Color;
 import javax.swing.JOptionPane;
 import java.text.DecimalFormat;
 
@@ -70,11 +71,11 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
     private void initComponents() {
 
         RB_Formas = new javax.swing.ButtonGroup();
-        jPanel1 = new javax.swing.JPanel();
+        Financ_Painel = new javax.swing.JPanel();
         Product_Label = new javax.swing.JLabel();
         Preco_Label = new javax.swing.JLabel();
         Blusa_Preco = new javax.swing.JLabel();
-        Pullover_Preco = new javax.swing.JLabel();
+        Pullover_Preço = new javax.swing.JLabel();
         Regata_Preco = new javax.swing.JLabel();
         Social_Preco = new javax.swing.JLabel();
         Sapato_Preco = new javax.swing.JLabel();
@@ -143,7 +144,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Controle de vendas:"));
+        Financ_Painel.setBorder(javax.swing.BorderFactory.createTitledBorder("Controle de vendas:"));
 
         Product_Label.setText("Produtos:");
 
@@ -151,7 +152,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
         Blusa_Preco.setText("119,90");
 
-        Pullover_Preco.setText("39,90");
+        Pullover_Preço.setText("39,90");
 
         Regata_Preco.setText("19,90");
 
@@ -396,16 +397,16 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout Financ_PainelLayout = new javax.swing.GroupLayout(Financ_Painel);
+        Financ_Painel.setLayout(Financ_PainelLayout);
+        Financ_PainelLayout.setHorizontalGroup(
+            Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Financ_PainelLayout.createSequentialGroup()
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Product_Label)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(Financ_PainelLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Regata_Check)
                             .addComponent(Social_Check)
                             .addComponent(Blusa_Check)
@@ -419,9 +420,9 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                             .addComponent(Meia_Check)
                             .addComponent(Luva_Check))))
                 .addGap(104, 104, 104)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Financ_PainelLayout.createSequentialGroup()
+                        .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Blusa_Preco)
                             .addComponent(Calca_Preco)
                             .addComponent(Meia_Preco)
@@ -432,18 +433,18 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                             .addComponent(Bone_Preco)
                             .addComponent(Sapato_Preco))
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Financ_PainelLayout.createSequentialGroup()
+                        .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Preco_Label)
                             .addComponent(Social_Preco)
-                            .addComponent(Pullover_Preco)
+                            .addComponent(Pullover_Preço)
                             .addComponent(Regata_Preco)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGroup(Financ_PainelLayout.createSequentialGroup()
                                 .addGap(21, 21, 21)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(Financ_PainelLayout.createSequentialGroup()
                                         .addGap(250, 250, 250)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(Jaq_Quant)
                                             .addComponent(Quant_Label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(Regata_Quant)
@@ -458,7 +459,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                                     .addComponent(Chinelo_Quant, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Bone_Quant, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(99, 99, 99)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(Total_Label)
                                     .addComponent(Tot_Bone, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
                                     .addComponent(Tot_Chinelo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -474,98 +475,98 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                                     .addComponent(Tot_Regata, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        Financ_PainelLayout.setVerticalGroup(
+            Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Financ_PainelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Preco_Label)
                         .addComponent(Product_Label))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Quant_Label)
                         .addComponent(Total_Label)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Regata_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Tot_Regata))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Regata_Preco)
                         .addComponent(Regata_Check)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Social_Preco)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Social_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Tot_Social))
                     .addComponent(Social_Check))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Blusa_Preco)
                     .addComponent(Blusa_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Tot_Blusa)
                     .addComponent(Blusa_Check))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(Pullover_Preco)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(Pullover_Preço)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Pullover_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Tot_Pullover)))
                     .addComponent(Pullover_Check))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Tot_Sapato)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Sapato_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Sapato_Preco)
                         .addComponent(Sapato_Check)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Calca_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Calca_Preco)
                     .addComponent(Tot_Calca)
                     .addComponent(Calca_Check))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Tot_Meia)
                         .addComponent(Meia_Preco)
                         .addComponent(Meia_Check))
                     .addComponent(Meia_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Luva_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Tot_Luva))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Luva_Preco)
                         .addComponent(Luva_Check)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Jaq_Preco)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Tot_Jaq)
                         .addComponent(Jaq_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(Jaq_Check))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Berm_Preco)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Tot_Berm)
                         .addComponent(Berm_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(Berm_Check))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Chinelo_Preco)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Chinelo_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Tot_Chinelo))
                     .addComponent(Chinelo_Check))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Financ_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Bone_Preco)
                         .addComponent(Bone_Check))
                     .addComponent(Bone_Quant, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -699,7 +700,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Financ_Painel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -732,7 +733,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Financ_Painel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(For_Pag, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -785,11 +786,14 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Sub_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sub_ButtonActionPerformed
        calctotal();
+       if(SubTotal == 0){
+           JOptionPane.showMessageDialog(this,"O valor do Sub-total não pode ser de R$0.00");
+       }
     }//GEN-LAST:event_Sub_ButtonActionPerformed
 
     private void Regata_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Regata_CheckActionPerformed
         if(Regata_Check.isSelected() == true){
-            Regata_Quant.setText("");
+            //Regata_Quant.setText("");
             Regata_Quant.setEditable(true);
             Regata_Quant.requestFocus(true);
         }
@@ -801,7 +805,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Social_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Social_CheckActionPerformed
         if(Social_Check.isSelected() == true){
-            Social_Quant.setText("");
+            //Social_Quant.setText("");
             Social_Quant.setEditable(true);
             Social_Quant.requestFocus(true);
         }
@@ -813,7 +817,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Blusa_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Blusa_CheckActionPerformed
         if(Blusa_Check.isSelected() == true){
-            Blusa_Quant.setText("");
+            //Blusa_Quant.setText("");
             Blusa_Quant.setEditable(true);
             Blusa_Quant.requestFocus(true);
         }
@@ -825,7 +829,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Pullover_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pullover_CheckActionPerformed
         if(Pullover_Check.isSelected() == true){
-            Pullover_Quant.setText("");
+            //Pullover_Quant.setText("");
             Pullover_Quant.setEditable(true);
             Pullover_Quant.requestFocus(true);
         }
@@ -837,7 +841,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Sapato_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sapato_CheckActionPerformed
         if(Sapato_Check.isSelected() == true){
-            Sapato_Quant.setText("");
+            //Sapato_Quant.setText("");
             Sapato_Quant.setEditable(true);
             Sapato_Quant.requestFocus(true);
         }
@@ -849,7 +853,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Calca_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Calca_CheckActionPerformed
         if(Calca_Check.isSelected() == true){
-            Calca_Quant.setText("");
+            //Calca_Quant.setText("");
             Calca_Quant.setEditable(true);
             Calca_Quant.requestFocus(true);
         }
@@ -861,7 +865,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Meia_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Meia_CheckActionPerformed
         if(Meia_Check.isSelected() == true){
-            Meia_Quant.setText("");
+            //Meia_Quant.setText("");
             Meia_Quant.setEditable(true);
             Meia_Quant.requestFocus(true);
         }
@@ -873,7 +877,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Luva_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Luva_CheckActionPerformed
         if(Luva_Check.isSelected() == true){
-            Luva_Quant.setText("");
+            //Luva_Quant.setText("");
             Luva_Quant.setEditable(true);
             Luva_Quant.requestFocus(true);
         }
@@ -885,7 +889,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Jaq_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jaq_CheckActionPerformed
         if(Jaq_Check.isSelected() == true){
-            Jaq_Quant.setText("");
+            //Jaq_Quant.setText("");
             Jaq_Quant.setEditable(true);
             Jaq_Quant.requestFocus(true);
         }
@@ -897,7 +901,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Berm_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Berm_CheckActionPerformed
         if(Berm_Check.isSelected() == true){
-            Berm_Quant.setText("");
+            //Berm_Quant.setText("");
             Berm_Quant.setEditable(true);
             Berm_Quant.requestFocus(true);
         }
@@ -909,7 +913,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Chinelo_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Chinelo_CheckActionPerformed
         if(Chinelo_Check.isSelected() == true){
-            Chinelo_Quant.setText("");
+            //Chinelo_Quant.setText("");
             Chinelo_Quant.setEditable(true);
             Chinelo_Quant.requestFocus(true);
         }
@@ -921,7 +925,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
 
     private void Bone_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bone_CheckActionPerformed
         if(Bone_Check.isSelected() == true){
-            Bone_Quant.setText("");
+            //Bone_Quant.setText("");
             Bone_Quant.setEditable(true);
             Bone_Quant.requestFocus(true);
         }
@@ -942,14 +946,18 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
         if(RB_Praz.isSelected() == true){
             if(SubTotal > 10){
                 String parcelas = (String) Parc_Quant.getSelectedItem();
-                double jurParc = Double.parseDouble(parcelas) * 6.90;
+                double jurParc = Integer.parseInt(parcelas) * 6.90;
                 double Porcentagem = SubTotal * 0.01;
                 Desc.setText("0.00");
-                Tot_Parc.setText(decimal.format(SubTotal) + decimal.format(jurParc) + decimal.format(Porcentagem));
-                Total_Pag.setText(decimal.format(Tot_Parc));
+                double total_parcelado = SubTotal + Porcentagem + jurParc;
+                Tot_Parc.setText(decimal.format(total_parcelado));
+                Total_Pag.setText(decimal.format(total_parcelado));
             }
-            else{
-                int confirma = JOptionPane.showConfirmDialog(this,"O valor para opção de pagamento deve ser maior que R$10.00","Sair",JOptionPane.OK_OPTION);
+            if(SubTotal == 0){
+                JOptionPane.showMessageDialog(this, "O Sub-total da compra não pode ser de R$0.00");
+            }
+            if(SubTotal < 10.00){
+                JOptionPane.showMessageDialog(this,"O valor para opção de pagamento deve ser maior que R$10.00");
             }
         }
     }//GEN-LAST:event_Calc_TotalActionPerformed
@@ -979,16 +987,16 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
         Berm_Check.setSelected(false);
         Chinelo_Check.setSelected(false);
         Bone_Check.setSelected(false);
-        Regata_Quant.setEnabled(false);
-        Social_Quant.setEnabled(false);
-        Blusa_Quant.setEnabled(false);
-        Pullover_Quant.setEnabled(false);
-        Sapato_Quant.setEnabled(false);
-        Calca_Quant.setEnabled(false);
-        Meia_Quant.setEnabled(false);
+        Regata_Quant.setEditable(false);
+        Social_Quant.setEditable(false);
+        Blusa_Quant.setEditable(false);
+        Pullover_Quant.setEditable(false);
+        Sapato_Quant.setEditable(false);
+        Calca_Quant.setEditable(false);
+        Meia_Quant.setEditable(false);
         Luva_Quant.setEditable(false);
-        Jaq_Quant.setEnabled(false);
-        Berm_Quant.setEnabled(false);
+        Jaq_Quant.setEditable(false);
+        Berm_Quant.setEditable(false);
         Chinelo_Quant.setEditable(false);
         Bone_Quant.setEditable(false);
         Regata_Quant.setText("0");
@@ -1077,6 +1085,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
     private javax.swing.JButton Clear_All;
     private javax.swing.JLabel Desc;
     private javax.swing.JLabel Desc_Label;
+    private javax.swing.JPanel Financ_Painel;
     private javax.swing.JPanel For_Pag;
     private javax.swing.JCheckBox Jaq_Check;
     private javax.swing.JLabel Jaq_Preco;
@@ -1091,7 +1100,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
     private javax.swing.JLabel Preco_Label;
     private javax.swing.JLabel Product_Label;
     private javax.swing.JCheckBox Pullover_Check;
-    private javax.swing.JLabel Pullover_Preco;
+    private javax.swing.JLabel Pullover_Preço;
     private javax.swing.JTextField Pullover_Quant;
     private javax.swing.JLabel Qt_Parc_Label;
     private javax.swing.JLabel Quant_Label;
@@ -1128,6 +1137,5 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
     private javax.swing.JLabel Total_Financ_Lable;
     private javax.swing.JLabel Total_Label;
     private javax.swing.JLabel Total_Pag;
-    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

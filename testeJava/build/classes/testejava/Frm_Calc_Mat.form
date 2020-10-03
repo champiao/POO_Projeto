@@ -586,9 +586,9 @@
                                   <Component id="Pot_6pot_Res" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="Pot_7pot_Rotulo" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Raiz_Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="Pot_7pot_Res" max="32767" attributes="0"/>
+                                  <Component id="Raiz_Res" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
@@ -641,8 +641,8 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="Pot_4pot_Rotulo" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="Pot_4pot_Res" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="Pot_7pot_Rotulo" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="Pot_7pot_Res" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Raiz_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Raiz_Res" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -723,12 +723,12 @@
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Pot_7pot_Rotulo">
+        <Component class="javax.swing.JLabel" name="Raiz_Label">
           <Properties>
-            <Property name="text" type="java.lang.String" value="7&#xb0; Potencia:"/>
+            <Property name="text" type="java.lang.String" value="Raiz Quadrada:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Pot_7pot_Res">
+        <Component class="javax.swing.JLabel" name="Raiz_Res">
           <Properties>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>

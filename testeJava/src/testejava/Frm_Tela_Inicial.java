@@ -18,6 +18,7 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
     public Frm_Tela_Inicial() {
         initComponents();
         Option_Mat.setSelected(true);
+        Option_Mat.requestFocus(true);
     }
     
 
@@ -32,12 +33,13 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         Selection = new javax.swing.ButtonGroup();
-        Painel_Tela_Inicial = new javax.swing.JPanel();
+        Inicial_Painel = new javax.swing.JPanel();
         Option_Mat = new javax.swing.JRadioButton();
         Option_Financ = new javax.swing.JRadioButton();
         Option_Espec = new javax.swing.JRadioButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        Avancar = new javax.swing.JButton();
+        Button_Quit = new javax.swing.JButton();
+        About_Button = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -53,7 +55,7 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cálculo Java");
 
-        Painel_Tela_Inicial.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Inicial_Painel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         Selection.add(Option_Mat);
         Option_Mat.setFont(new java.awt.Font("Yu Gothic UI Semilight", 2, 11)); // NOI18N
@@ -75,52 +77,65 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
         Option_Espec.setText("Cálculos Especiais");
         Option_Espec.setToolTipText("");
 
-        jButton1.setText("Avançar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Avancar.setText("Avançar");
+        Avancar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                AvancarActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Sair");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        Button_Quit.setText("Sair");
+        Button_Quit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                Button_QuitActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout Painel_Tela_InicialLayout = new javax.swing.GroupLayout(Painel_Tela_Inicial);
-        Painel_Tela_Inicial.setLayout(Painel_Tela_InicialLayout);
-        Painel_Tela_InicialLayout.setHorizontalGroup(
-            Painel_Tela_InicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Painel_Tela_InicialLayout.createSequentialGroup()
+        About_Button.setText("Sobre");
+        About_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                About_ButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Inicial_PainelLayout = new javax.swing.GroupLayout(Inicial_Painel);
+        Inicial_Painel.setLayout(Inicial_PainelLayout);
+        Inicial_PainelLayout.setHorizontalGroup(
+            Inicial_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Inicial_PainelLayout.createSequentialGroup()
                 .addGap(67, 67, 67)
-                .addGroup(Painel_Tela_InicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Painel_Tela_InicialLayout.createSequentialGroup()
-                        .addGroup(Painel_Tela_InicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Inicial_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Inicial_PainelLayout.createSequentialGroup()
+                        .addGroup(Inicial_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Option_Espec)
                             .addComponent(Option_Financ)
                             .addComponent(Option_Mat))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(Painel_Tela_InicialLayout.createSequentialGroup()
-                        .addComponent(jButton1)
+                    .addGroup(Inicial_PainelLayout.createSequentialGroup()
+                        .addComponent(Avancar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
-                        .addComponent(jButton2)
+                        .addComponent(Button_Quit)
                         .addGap(81, 81, 81))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Inicial_PainelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(About_Button)
+                .addContainerGap())
         );
-        Painel_Tela_InicialLayout.setVerticalGroup(
-            Painel_Tela_InicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Painel_Tela_InicialLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
+        Inicial_PainelLayout.setVerticalGroup(
+            Inicial_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Inicial_PainelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(About_Button)
+                .addGap(2, 2, 2)
                 .addComponent(Option_Mat)
                 .addGap(18, 18, 18)
                 .addComponent(Option_Financ)
                 .addGap(18, 18, 18)
                 .addComponent(Option_Espec)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
-                .addGroup(Painel_Tela_InicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                .addGroup(Inicial_PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Avancar)
+                    .addComponent(Button_Quit))
                 .addGap(28, 28, 28))
         );
 
@@ -130,14 +145,14 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Painel_Tela_Inicial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Inicial_Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Painel_Tela_Inicial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Inicial_Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -148,14 +163,14 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Option_MatActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void Button_QuitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_QuitActionPerformed
       int confirma = JOptionPane.showConfirmDialog(this,"Deseja sair do sistema?","Sair",JOptionPane.YES_NO_OPTION);
       if(confirma == 0){
           System.exit(0);
       }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_Button_QuitActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void AvancarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AvancarActionPerformed
         if(Option_Mat.isSelected()) {
             new Frm_Calc_Mat().setVisible(true);
         }
@@ -165,7 +180,11 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
         if (Option_Espec.isSelected()) {
             new Frm_Calc_Espec().setVisible(true);
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_AvancarActionPerformed
+
+    private void About_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_About_ButtonActionPerformed
+        new Frm_About().setVisible(true);
+    }//GEN-LAST:event_About_ButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -203,13 +222,14 @@ public class Frm_Tela_Inicial extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton About_Button;
+    private javax.swing.JButton Avancar;
+    private javax.swing.JButton Button_Quit;
+    private javax.swing.JPanel Inicial_Painel;
     private javax.swing.JRadioButton Option_Espec;
     private javax.swing.JRadioButton Option_Financ;
     private javax.swing.JRadioButton Option_Mat;
-    private javax.swing.JPanel Painel_Tela_Inicial;
     private javax.swing.ButtonGroup Selection;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
