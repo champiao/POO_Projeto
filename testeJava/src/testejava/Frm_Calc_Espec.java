@@ -182,7 +182,7 @@ public class Frm_Calc_Espec extends javax.swing.JFrame {
             }
         });
 
-        Prim_Res.setText("Exibir mensagem de Resposta");
+        Prim_Res.setText("Verificação número primo");
 
         javax.swing.GroupLayout Prim_PainelLayout = new javax.swing.GroupLayout(Prim_Painel);
         Prim_Painel.setLayout(Prim_PainelLayout);
@@ -321,7 +321,7 @@ public class Frm_Calc_Espec extends javax.swing.JFrame {
             }
         });
 
-        Im_Par_Res.setText("Exibir mensagem de resposta");
+        Im_Par_Res.setText("Verificação par ou ímpar");
 
         javax.swing.GroupLayout Par_Impar_PainelLayout = new javax.swing.GroupLayout(Par_Impar_Painel);
         Par_Impar_Painel.setLayout(Par_Impar_PainelLayout);
@@ -396,10 +396,15 @@ public class Frm_Calc_Espec extends javax.swing.JFrame {
         });
 
         Clear_Bhas.setText("Limpar");
+        Clear_Bhas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Clear_BhasActionPerformed(evt);
+            }
+        });
 
         Res_Label.setText("Resultados:");
 
-        Delt_Label.setText("Delta;");
+        Delt_Label.setText("Delta:");
 
         X1_Label.setText("X1:");
 
@@ -485,6 +490,11 @@ public class Frm_Calc_Espec extends javax.swing.JFrame {
         );
 
         Clear_All.setText("Limpar Todos");
+        Clear_All.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Clear_AllActionPerformed(evt);
+            }
+        });
 
         Button_Quit.setText("Fechar Formulário");
         Button_Quit.addActionListener(new java.awt.event.ActionListener() {
@@ -599,9 +609,9 @@ public class Frm_Calc_Espec extends javax.swing.JFrame {
         double delta = (Math.pow(b, 2) - 4 * a * c);
         double x1 = (-b + Math.sqrt(delta)) / (2 * a);
         double x2 = (-b - Math.sqrt(delta)) / (2 * a);
-        Delt_Res.setText(decimal.format(delta));
-        X1_Res.setText(decimal.format(x1));
-        X2_Res.setText(decimal.format(x2));
+        Delt_Res.setText(Double.toString(delta));
+        X1_Res.setText(Double.toString(x1));
+        X2_Res.setText(Double.toString(x2));
     }//GEN-LAST:event_Calc_BhasActionPerformed
 
     private void Im_Par_CalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im_Par_CalcActionPerformed
@@ -643,13 +653,41 @@ public class Frm_Calc_Espec extends javax.swing.JFrame {
 
     private void Clear_PrimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Clear_PrimActionPerformed
         Num_Prim.setText("");
-        Prim_Res.setText("Exibir mensagem de Resposta");
+        Prim_Res.setText("Verificação número primo");
     }//GEN-LAST:event_Clear_PrimActionPerformed
 
     private void Clear_Im_ParActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Clear_Im_ParActionPerformed
         Im_Par_Num.setText("");
-        Im_Par_Res.setText("Exibir mensagem de Resposta");
+        Im_Par_Res.setText("Verificação par ou ímpar");
     }//GEN-LAST:event_Clear_Im_ParActionPerformed
+
+    private void Clear_AllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Clear_AllActionPerformed
+        MMC_N1.setText("");
+        MMC_N2.setText("");
+        MMC_Res.setText("Exibir resultado do MMC");
+        MDC_Num1.setText("");
+        MDC_Num2.setText("");
+        MDC_Res.setText("Exibir resultado do MDC");
+        Num_Prim.setText("");
+        Prim_Res.setText("Verificação número primo");
+        Im_Par_Num.setText("");
+        Im_Par_Res.setText("Verificação par ou ímpar");
+        N1_Bhas.setText("");
+        N2_Bhas.setText("");
+        N3_Bhas.setText("");
+        Delt_Res.setText("0");
+        X1_Res.setText("0");
+        X2_Res.setText("0");
+    }//GEN-LAST:event_Clear_AllActionPerformed
+
+    private void Clear_BhasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Clear_BhasActionPerformed
+       N1_Bhas.setText("");
+       N2_Bhas.setText("");
+       N3_Bhas.setText("");
+       Delt_Res.setText("0");
+       X1_Res.setText("0");
+       X2_Res.setText("0");
+    }//GEN-LAST:event_Clear_BhasActionPerformed
 
     /**
      * @param args the command line arguments

@@ -271,7 +271,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="Prim_Res">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Exibir mensagem de Resposta"/>
+            <Property name="text" type="java.lang.String" value="Verifica&#xe7;&#xe3;o n&#xfa;mero primo"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -464,7 +464,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="Im_Par_Res">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Exibir mensagem de resposta"/>
+            <Property name="text" type="java.lang.String" value="Verifica&#xe7;&#xe3;o par ou &#xed;mpar"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -616,6 +616,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Limpar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Clear_BhasActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="Res_Label">
           <Properties>
@@ -624,7 +627,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="Delt_Label">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Delta;"/>
+            <Property name="text" type="java.lang.String" value="Delta:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="X1_Label">
@@ -658,6 +661,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Limpar Todos"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Clear_AllActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Button_Quit">
       <Properties>

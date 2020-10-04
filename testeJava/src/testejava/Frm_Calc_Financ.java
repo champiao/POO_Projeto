@@ -942,6 +942,7 @@ public class Frm_Calc_Financ extends javax.swing.JFrame {
             double total = SubTotal - totalDesc;
             Desc.setText(decimal.format(totalDesc));
             Total_Pag.setText(decimal.format(total));
+            Tot_Parc.setText("0,00");
         }
         if(RB_Praz.isSelected() == true){
             if(SubTotal > 10){
